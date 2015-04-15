@@ -1,2 +1,2 @@
 # NegoServicios
-Añadida documentacion
+Proyecto de DSS de la Universidad de Alicante
