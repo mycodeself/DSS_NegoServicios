@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace NegoServiciosGenNHibernate.Interfaces
 {
-    public partial class Form1 : Form
+    public partial class crear_cliente : Form
     {
-        public Form1()
+        public crear_cliente()
         {
             InitializeComponent();
         }

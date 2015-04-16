@@ -94,18 +94,13 @@
     <Content Include="AppLib\NHibernate.dll" />
     <Content Include="AppLib\nunit.core.dll" />
     <Content Include="AppLib\nunit.framework.dll" />
-    <Content Include="Interfaces\Crear_usuario.h" />
-    <Content Include="Interfaces\Interfaz_Empleado.h" />
-    <Content Include="Interfaces\MyForm.cpp" />
-    <Content Include="Interfaces\MyForm.h" />
-    <Content Include="Interfaces\MyForm1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\Form1.cs">
+    <Compile Include="Interfaces\crear_cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Interfaces\crear_cliente.Designer.cs">
+      <DependentUpon>crear_cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils\Util.cs" />
     <Compile Include="NHibernateHelper.cs" />
@@ -148,12 +143,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Interfaces\Crear_usuario.resx" />
-    <EmbeddedResource Include="Interfaces\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Interfaces\crear_cliente.resx">
+      <DependentUpon>crear_cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interfaces\Interfaz_Empleado.resx" />
-    <EmbeddedResource Include="Interfaces\MyForm.resx" />
     <EmbeddedResource Include="Mappings\NegoServicios\usuario.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\cliente.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\empleado.hbm.xml" />
@@ -168,8 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Interfaces\PruebaInterfaz.vcxproj" />
-    <None Include="Interfaces\PruebaInterfaz.vcxproj.filters" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
