@@ -20,5 +20,15 @@ namespace NegoServiciosGenNHibernate.Interfaces
         {
 
         }
+
+        private void crearCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dni_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

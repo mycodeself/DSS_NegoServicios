@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.usuario_label = new System.Windows.Forms.Label();
+            this.password_label = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.email_text = new System.Windows.Forms.TextBox();
+            this.password_text = new System.Windows.Forms.TextBox();
+            this.usuario_text = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dni_label = new System.Windows.Forms.Label();
+            this.dni_text = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -48,32 +50,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // label2
+            // usuario_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.usuario_label.Location = new System.Drawing.Point(53, 51);
+            this.usuario_label.Name = "usuario_label";
+            this.usuario_label.Size = new System.Drawing.Size(64, 20);
+            this.usuario_label.TabIndex = 1;
+            this.usuario_label.Text = "Usuario";
+            this.usuario_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // password_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.password_label.Location = new System.Drawing.Point(53, 86);
+            this.password_label.Name = "password_label";
+            this.password_label.Size = new System.Drawing.Size(64, 20);
+            this.password_label.TabIndex = 2;
+            this.password_label.Text = "Password";
+            this.password_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 170);
+            this.label4.Location = new System.Drawing.Point(53, 125);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.label4.Text = "E-Mail";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
@@ -85,26 +87,26 @@
             this.label5.Text = "Crear Cliente";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox1
+            // email_text
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 159);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.email_text.Location = new System.Drawing.Point(123, 125);
+            this.email_text.Name = "email_text";
+            this.email_text.Size = new System.Drawing.Size(100, 20);
+            this.email_text.TabIndex = 5;
             // 
-            // textBox2
+            // password_text
             // 
-            this.textBox2.Location = new System.Drawing.Point(142, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.password_text.Location = new System.Drawing.Point(123, 86);
+            this.password_text.Name = "password_text";
+            this.password_text.Size = new System.Drawing.Size(100, 20);
+            this.password_text.TabIndex = 6;
             // 
-            // textBox3
+            // usuario_text
             // 
-            this.textBox3.Location = new System.Drawing.Point(142, 51);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.usuario_text.Location = new System.Drawing.Point(123, 51);
+            this.usuario_text.Name = "usuario_text";
+            this.usuario_text.Size = new System.Drawing.Size(100, 20);
+            this.usuario_text.TabIndex = 7;
             // 
             // button1
             // 
@@ -115,22 +117,41 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // dni_label
+            // 
+            this.dni_label.Location = new System.Drawing.Point(53, 163);
+            this.dni_label.Name = "dni_label";
+            this.dni_label.Size = new System.Drawing.Size(64, 20);
+            this.dni_label.TabIndex = 9;
+            this.dni_label.Text = "DNI";
+            this.dni_label.Click += new System.EventHandler(this.dni_label_Click);
+            // 
+            // dni_text
+            // 
+            this.dni_text.Location = new System.Drawing.Point(123, 163);
+            this.dni_text.Name = "dni_text";
+            this.dni_text.Size = new System.Drawing.Size(100, 20);
+            this.dni_text.TabIndex = 10;
+            // 
             // crearCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.dni_text);
+            this.Controls.Add(this.dni_label);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.usuario_text);
+            this.Controls.Add(this.password_text);
+            this.Controls.Add(this.email_text);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.password_label);
+            this.Controls.Add(this.usuario_label);
             this.Controls.Add(this.label1);
             this.Name = "crearCliente";
             this.Text = "crearCliente";
+            this.Load += new System.EventHandler(this.crearCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,13 +160,15 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label usuario_label;
+        private System.Windows.Forms.Label password_label;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox email_text;
+        private System.Windows.Forms.TextBox password_text;
+        private System.Windows.Forms.TextBox usuario_text;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label dni_label;
+        private System.Windows.Forms.TextBox dni_text;
     }
 }

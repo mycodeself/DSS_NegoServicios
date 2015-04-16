@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace NegoServiciosGenNHibernate.Interfaces
 {
-    public partial class Login : Form
+    public partial class login : Form
     {
-        public Login()
+        public login()
         {
             InitializeComponent();
         }
