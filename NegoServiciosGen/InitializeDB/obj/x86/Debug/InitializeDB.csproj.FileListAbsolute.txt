@@ -17,3 +17,6 @@ C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.exe
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.pdb
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\InitializeDB\bin\Debug\InitializeDB.exe.config
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.exe
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.pdb
