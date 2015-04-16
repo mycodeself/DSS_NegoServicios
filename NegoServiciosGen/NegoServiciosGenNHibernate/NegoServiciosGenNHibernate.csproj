@@ -71,7 +71,9 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
@@ -92,12 +94,23 @@
     <Content Include="AppLib\NHibernate.dll" />
     <Content Include="AppLib\nunit.core.dll" />
     <Content Include="AppLib\nunit.framework.dll" />
+    <Content Include="Interfaces\Crear_usuario.h" />
+    <Content Include="Interfaces\Interfaz_Empleado.h" />
+    <Content Include="Interfaces\MyForm.cpp" />
+    <Content Include="Interfaces\MyForm.h" />
+    <Content Include="Interfaces\MyForm1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Util.cs" />
     <Compile Include="NHibernateHelper.cs" />
-    <Compile Include="Exceptions\ModelException.cs" />
-    <Compile Include="Exceptions\DataLayerException.cs" />
+    <Compile Include="Enumerated\Exceptions\ModelException.cs" />
+    <Compile Include="Enumerated\Exceptions\DataLayerException.cs" />
     <Compile Include="CAD\BasicCAD.cs" />
     <Compile Include="EN\NegoServicios\UsuarioEN.cs" />
     <Compile Include="CEN\NegoServicios\UsuarioCEN.cs" />
@@ -135,6 +148,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Interfaces\Crear_usuario.resx" />
+    <EmbeddedResource Include="Interfaces\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Interfaz_Empleado.resx" />
+    <EmbeddedResource Include="Interfaces\MyForm.resx" />
     <EmbeddedResource Include="Mappings\NegoServicios\usuario.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\cliente.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\empleado.hbm.xml" />
@@ -149,6 +168,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Interfaces\PruebaInterfaz.vcxproj" />
+    <None Include="Interfaces\PruebaInterfaz.vcxproj.filters" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
