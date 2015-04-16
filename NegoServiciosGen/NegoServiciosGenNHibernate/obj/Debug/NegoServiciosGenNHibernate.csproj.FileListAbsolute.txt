@@ -26,14 +26,5 @@ D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\bin\
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Antlr3.Runtime.dll
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\log4net.dll
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csprojResolveAssemblyReference.cache
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Interfaces.crearCliente.resources
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Interfaces.eliminarCliente1.resources
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Interfaces.eliminarCliente2.resources
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Interfaces.ErrorID.resources
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Interfaces.InterfazEmpleado.resources
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Interfaces.login.resources
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Interfaces.modificarCliente1.resources
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Interfaces.modificarCliente2.resources
-D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csproj.GenerateResource.Cache
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.dll
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.pdb

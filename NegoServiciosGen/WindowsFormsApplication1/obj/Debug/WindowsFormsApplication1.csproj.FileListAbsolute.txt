@@ -1,0 +1,16 @@
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\NegoServiciosGenNHibernate.Interfaces.crearCliente.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\NegoServiciosGenNHibernate.Interfaces.eliminarCliente1.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\NegoServiciosGenNHibernate.Interfaces.eliminarCliente2.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\NegoServiciosGenNHibernate.Interfaces.ErrorID.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\NegoServiciosGenNHibernate.Interfaces.InterfazEmpleado.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\NegoServiciosGenNHibernate.Interfaces.login.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\NegoServiciosGenNHibernate.Interfaces.modificarCliente1.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\NegoServiciosGenNHibernate.Interfaces.modificarCliente2.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
