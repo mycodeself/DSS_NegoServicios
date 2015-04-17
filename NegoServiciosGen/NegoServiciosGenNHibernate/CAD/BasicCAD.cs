@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using NHibernate;
 using NegoServiciosGenNHibernate.Exceptions;
+using System.Windows.Forms;
 
 namespace NegoServiciosGenNHibernate.CAD.NegoServicios
 {
@@ -30,7 +31,9 @@ protected void SessionInitializeTransaction ()
 {
         if (session == null) {
                 session = NHibernateHelper.OpenSession ();
+                MessageBox.Show("correcto");
                 tx = session.BeginTransaction ();
+                
         }
 }
 
