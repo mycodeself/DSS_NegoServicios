@@ -77,6 +77,18 @@ public static void InitializeData ()
         /*PROTECTED REGION ID(initializeDataMethod) ENABLED START*/
         try
         {
+            NegoServiciosGenNHibernate.EN.NegoServicios.EmpleadoEN empleado = new EmpleadoEN();
+            empleado.Email = "empleado@ns.com";
+            empleado.Usuario = "emp";
+            empleado.Password = "emp";
+            empleado.Nombre = "Empleado";
+            EmpleadoCEN empleadoCEN = new EmpleadoCEN();
+            empleadoCEN.New_(empleado.Usuario, empleado.Password, empleado.Email, empleado.Nombre);
+
+            ClienteCEN clienteCEN = new ClienteCEN();
+            clienteCEN.New_("cli", "cli", "cli@ns.com", "12345678X");
+            clienteCEN.New_("pepe", "pepe", "pepe@gmail.com", "99999999Z");
+
                 /*List<NegoServiciosGenNHibernate.EN.Mediaplayer.MusicTrackEN> musicTracks = new List<NegoServiciosGenNHibernate.EN.Mediaplayer.MusicTrackEN>();
                  * NegoServiciosGenNHibernate.EN.Mediaplayer.UserEN userEN = new NegoServiciosGenNHibernate.EN.Mediaplayer.UserEN();
                  * NegoServiciosGenNHibernate.EN.Mediaplayer.ArtistEN artistEN = new NegoServiciosGenNHibernate.EN.Mediaplayer.ArtistEN();

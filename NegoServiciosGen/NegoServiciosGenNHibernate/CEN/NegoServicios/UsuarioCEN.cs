@@ -86,7 +86,7 @@ public System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size)
         list = _IUsuarioCAD.ReadAll (first, size);
         return list;
 }
-public System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServicios.ReservaEN> ReadByUsuario (string p_user)
+public NegoServiciosGenNHibernate.EN.NegoServicios.UsuarioEN ReadByUsuario (string p_user)
 {
         return _IUsuarioCAD.ReadByUsuario (p_user);
 }
