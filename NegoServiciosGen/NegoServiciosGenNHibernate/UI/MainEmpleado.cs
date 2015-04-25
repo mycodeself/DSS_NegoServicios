@@ -18,7 +18,7 @@ namespace NegoServiciosGenNHibernate.UI
 
         private void goClientes_Click(object sender, EventArgs e)
         {
-            AerolineaVer cli = new AerolineaVer();
+            ClientesVer cli = new ClientesVer();
             cli.TopLevel = false;
             this.container.Controls.Add(cli);
             cli.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

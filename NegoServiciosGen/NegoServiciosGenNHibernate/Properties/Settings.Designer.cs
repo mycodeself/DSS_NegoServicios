@@ -26,8 +26,8 @@ namespace NegoServiciosGenNHibernate.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\\sqlexpress;Initial Catalog=NegoServiciosGenNHibernate;User " +
-            "ID=nhibernateUser;Password=nhibernatePass")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\\sqlexpress;Initial Catalog=NegoServiciosGenNHibernate;Persi" +
+            "st Security Info=True;User ID=nhibernateUser;Password=nhibernatePass")]
         public string NegoServiciosGenNHibernateConnectionString {
             get {
                 return ((string)(this["NegoServiciosGenNHibernateConnectionString"]));

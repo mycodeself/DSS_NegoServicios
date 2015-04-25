@@ -12,9 +12,9 @@ using NegoServiciosGenNHibernate.CAD.NegoServicios;
 
 namespace NegoServiciosGenNHibernate.UI
 {
-    public partial class AerolineaVer : Form
+    public partial class ClientesVer : Form
     {
-        public AerolineaVer()
+        public ClientesVer()
         {
             InitializeComponent();
 
@@ -22,6 +22,9 @@ namespace NegoServiciosGenNHibernate.UI
 
         private void VerClientes_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'negoServiciosGenNHibernateDataSet.Cliente' Puede moverla o quitarla según sea necesario.
+            this.clienteTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Cliente);
+
             this.refreshData();
         }
 

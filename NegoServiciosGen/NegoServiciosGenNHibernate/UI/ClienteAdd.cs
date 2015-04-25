@@ -12,8 +12,8 @@ namespace NegoServiciosGenNHibernate.UI
 {
     public partial class ClienteAdd : Form
     {
-        private AerolineaVer verClientesForm;
-        public ClienteAdd(AerolineaVer form)
+        private ClientesVer verClientesForm;
+        public ClienteAdd(ClientesVer form)
         {
             InitializeComponent();
             this.verClientesForm = form;

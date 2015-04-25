@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using NegoServiciosGenNHibernate.UI;
+
 namespace NegoServiciosGenNHibernate
 {
     static class Program

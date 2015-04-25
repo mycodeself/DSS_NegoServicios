@@ -30,7 +30,7 @@ namespace NegoServiciosGenNHibernate.UI
                 emp.StartPosition = FormStartPosition.Manual;
                 emp.FormClosing += delegate { this.Show(); };
                 emp.Show();
-                this.Hide();
+                this.Close();
             }
             else
             {

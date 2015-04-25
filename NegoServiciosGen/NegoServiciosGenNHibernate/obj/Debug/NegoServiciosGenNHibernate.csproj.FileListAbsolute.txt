@@ -13,7 +13,17 @@ C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.dll
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.pdb
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NegoServiciosGenNHibernate.exe.config
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.pdb
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csprojResolveAssemblyReference.cache
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClienteAdd.resources
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClienteModificar.resources
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.AerolineaVer.resources
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.Login.resources
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.MainEmpleado.resources
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csproj.GenerateResource.Cache
 C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\hibernate.cfg.xml
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NegoServiciosGenNHibernate.exe
 C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NegoServiciosGenNHibernate.pdb
 C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll
 C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll
@@ -23,14 +33,27 @@ C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NHib
 C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Iesi.Collections.dll
 C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Antlr3.Runtime.dll
 C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\log4net.dll
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csprojResolveAssemblyReference.cache
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.pdb
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.Login.resources
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csproj.GenerateResource.Cache
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NegoServiciosGenNHibernate.exe.config
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NegoServiciosGenNHibernate.exe
 C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.exe
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.MainEmpleado.resources
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClienteAdd.resources
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClienteModificar.resources
-C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.AerolineaVer.resources
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\nunit.core.dll
+C:\Users\Isma\Desktop\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\nunit.framework.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csprojResolveAssemblyReference.cache
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\hibernate.cfg.xml
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NegoServiciosGenNHibernate.pdb
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NHibernate.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Iesi.Collections.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\log4net.dll
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.pdb
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NegoServiciosGenNHibernate.exe.config
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.exe
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\NegoServiciosGenNHibernate.exe
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClienteAdd.resources
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClienteModificar.resources
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.Login.resources
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.MainEmpleado.resources
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csproj.GenerateResource.Cache
+C:\Users\Isma\Desktop\eclipse\workspace\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClientesVer.resources
