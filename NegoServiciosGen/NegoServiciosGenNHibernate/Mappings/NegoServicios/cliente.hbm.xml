@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NegoServiciosGenNHibernate"
+		                   namespace="NegoServiciosGenNHibernate.EN.NegoServicios">
+				
+<joined-subclass name="ClienteEN" extends="NegoServiciosGenNHibernate.EN.NegoServicios.UsuarioEN" table="[Cliente]">
+	<key>
+    		<column name="[idUsuario]"/>
+   	</key>
+
+					<property name="DNI" type="string"> 
+						<column name="[DNI]" length="9" unique="true" not-null="true"/>
+					</property>
+			
+			
+		  			
+						<bag name="Reserva" >
+							<key>
+								<column name="[FK_idUsuario_idCliente]"/>
+					      	</key>
+							<one-to-many class="NegoServiciosGenNHibernate.EN.NegoServicios.ReservaEN"/>
+					    </bag>
+					
+					
+					
+		
+		  </joined-subclass>	
+		  
+		  <query name="ClienteENReadAllHQL">from ClienteEN</query>
+		</hibernate-mapping>
+	
