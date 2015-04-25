@@ -109,14 +109,14 @@
             this.password.Location = new System.Drawing.Point(93, 81);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(100, 20);
-            this.password.TabIndex = 12;
+            this.password.TabIndex = 11;
             // 
             // email
             // 
             this.email.Location = new System.Drawing.Point(93, 118);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(100, 20);
-            this.email.TabIndex = 11;
+            this.email.TabIndex = 12;
             // 
             // usuario
             // 
@@ -141,6 +141,7 @@
             this.Controls.Add(this.email);
             this.Controls.Add(this.usuario);
             this.Name = "ClienteModificar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar cliente";
             this.Load += new System.EventHandler(this.ClienteModificar_Load);
             this.ResumeLayout(false);

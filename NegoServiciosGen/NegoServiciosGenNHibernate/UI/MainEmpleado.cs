@@ -18,6 +18,8 @@ namespace NegoServiciosGenNHibernate.UI
 
         private void goClientes_Click(object sender, EventArgs e)
         {
+            this.header.Text = "CLIENTES";
+            this.header.Visible = true;
             ClientesVer cli = new ClientesVer();
             cli.TopLevel = false;
             this.container.Controls.Add(cli);

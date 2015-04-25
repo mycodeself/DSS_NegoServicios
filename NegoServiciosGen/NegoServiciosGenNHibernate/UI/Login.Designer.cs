@@ -38,7 +38,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(153, 126);
+            this.button1.Location = new System.Drawing.Point(153, 132);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -82,7 +82,7 @@
             // 
             this.errorText.AutoSize = true;
             this.errorText.ForeColor = System.Drawing.Color.Red;
-            this.errorText.Location = new System.Drawing.Point(-7, 110);
+            this.errorText.Location = new System.Drawing.Point(-7, 112);
             this.errorText.MinimumSize = new System.Drawing.Size(400, 0);
             this.errorText.Name = "errorText";
             this.errorText.Size = new System.Drawing.Size(400, 13);
@@ -103,7 +103,8 @@
             this.Controls.Add(this.userText);
             this.Controls.Add(this.button1);
             this.Name = "Login";
-            this.Text = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login - NegoServicios";
             this.ResumeLayout(false);
             this.PerformLayout();
 

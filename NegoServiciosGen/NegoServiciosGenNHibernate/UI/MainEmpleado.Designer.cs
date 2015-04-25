@@ -33,6 +33,7 @@
             this.goAerolineas = new System.Windows.Forms.Button();
             this.goVuelos = new System.Windows.Forms.Button();
             this.verReservas = new System.Windows.Forms.Button();
+            this.header = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // goClientes
@@ -47,9 +48,9 @@
             // 
             // container
             // 
-            this.container.Location = new System.Drawing.Point(12, 106);
+            this.container.Location = new System.Drawing.Point(12, 150);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(756, 495);
+            this.container.Size = new System.Drawing.Size(756, 451);
             this.container.TabIndex = 1;
             // 
             // goAerolineas
@@ -79,19 +80,33 @@
             this.verReservas.Text = "Reservas";
             this.verReservas.UseVisualStyleBackColor = true;
             // 
+            // header
+            // 
+            this.header.AutoSize = true;
+            this.header.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.header.Location = new System.Drawing.Point(39, 101);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(112, 31);
+            this.header.TabIndex = 5;
+            this.header.Text = "TITULO";
+            this.header.Visible = false;
+            // 
             // MainEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 613);
+            this.Controls.Add(this.header);
             this.Controls.Add(this.verReservas);
             this.Controls.Add(this.goVuelos);
             this.Controls.Add(this.goAerolineas);
             this.Controls.Add(this.container);
             this.Controls.Add(this.goClientes);
             this.Name = "MainEmpleado";
-            this.Text = "MainEmpleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "NegoServicios - Booking aereo";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -102,6 +117,7 @@
         private System.Windows.Forms.Button goAerolineas;
         private System.Windows.Forms.Button goVuelos;
         private System.Windows.Forms.Button verReservas;
+        private System.Windows.Forms.Label header;
 
     }
 }

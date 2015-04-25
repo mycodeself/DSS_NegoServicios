@@ -88,6 +88,13 @@ public static void InitializeData ()
                 ClienteCEN clienteCEN = new ClienteCEN ();
                 clienteCEN.New_ ("cli", "cli", "cli@ns.com", "12345678X");
                 clienteCEN.New_ ("pepe", "pepe", "pepe@gmail.com", "99999999Z");
+
+                AerolineaCEN aerolineaCEN = new AerolineaCEN();
+                aerolineaCEN.New_("Iberia");
+                aerolineaCEN.New_("Air Europa");
+                aerolineaCEN.New_("Air Nostrum");
+                aerolineaCEN.New_("Easy Jet");
+                aerolineaCEN.New_("Ryanair");
                 /*List<NegoServiciosGenNHibernate.EN.Mediaplayer.MusicTrackEN> musicTracks = new List<NegoServiciosGenNHibernate.EN.Mediaplayer.MusicTrackEN>();
                  * NegoServiciosGenNHibernate.EN.Mediaplayer.UserEN userEN = new NegoServiciosGenNHibernate.EN.Mediaplayer.UserEN();
                  * NegoServiciosGenNHibernate.EN.Mediaplayer.ArtistEN artistEN = new NegoServiciosGenNHibernate.EN.Mediaplayer.ArtistEN();

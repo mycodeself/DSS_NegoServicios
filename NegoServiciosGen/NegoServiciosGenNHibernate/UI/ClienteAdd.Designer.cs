@@ -52,14 +52,14 @@
             this.email.Location = new System.Drawing.Point(140, 118);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(100, 20);
-            this.email.TabIndex = 1;
+            this.email.TabIndex = 2;
             // 
             // password
             // 
             this.password.Location = new System.Drawing.Point(140, 81);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(100, 20);
-            this.password.TabIndex = 2;
+            this.password.TabIndex = 1;
             // 
             // dni
             // 
@@ -141,6 +141,7 @@
             this.Controls.Add(this.email);
             this.Controls.Add(this.usuario);
             this.Name = "ClienteAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Añadir cliente";
             this.ResumeLayout(false);
             this.PerformLayout();

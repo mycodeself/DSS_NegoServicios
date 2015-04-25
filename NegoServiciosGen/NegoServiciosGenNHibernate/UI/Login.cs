@@ -20,22 +20,37 @@ namespace NegoServiciosGenNHibernate.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string user = userText.Text;
+            string pass = passText.Text;
             errorText.Text = "";
             errorText.Visible = true;
             UsuarioCEN usuarioCEN = new UsuarioCEN();
-            if (usuarioCEN.Login(userText.Text, passText.Text))
+            if (validateLogin(user, pass))
             {
-                MainEmpleado emp = new MainEmpleado();
-                emp.Location = this.Location;
-                emp.StartPosition = FormStartPosition.Manual;
-                emp.FormClosing += delegate { this.Show(); };
-                emp.Show();
-                this.Hide();
+                if (usuarioCEN.Login(userText.Text, passText.Text))
+                {
+                    MainEmpleado emp = new MainEmpleado();
+                    emp.Location = this.Location;
+                    emp.StartPosition = FormStartPosition.Manual;
+                    emp.FormClosing += delegate { this.Show(); };
+                    emp.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    errorText.Text += "Usuario y/o contraseña incorrectos";
+                }
             }
-            else
+        }
+
+        private bool validateLogin(string user, string pass)
+        {
+            if (user.Equals("") || pass.Equals(""))
             {
-                errorText.Text += "Error";
+                errorText.Text = "Debe introducir un usuario y una contraseña";
+                return false;
             }
+            return true;
         }
     }
 }
