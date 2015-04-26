@@ -11,6 +11,9 @@ namespace NegoServiciosGenNHibernate.UI
 {
     public partial class MainEmpleado : Form
     {
+        ClientesVer clientesForm;
+        AerolineasVer aerolineasForm;
+
         public MainEmpleado()
         {
             InitializeComponent();
@@ -20,12 +23,32 @@ namespace NegoServiciosGenNHibernate.UI
         {
             this.header.Text = "CLIENTES";
             this.header.Visible = true;
-            ClientesVer cli = new ClientesVer();
-            cli.TopLevel = false;
-            this.container.Controls.Add(cli);
-            cli.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            cli.Dock = DockStyle.Fill;
-            cli.Show();
+            if(aerolineasForm != null)
+            {
+                aerolineasForm.Close();
+            }
+            clientesForm = new ClientesVer();
+            clientesForm.TopLevel = false;
+            this.container.Controls.Add(clientesForm);
+            clientesForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            clientesForm.Dock = DockStyle.Fill;
+            clientesForm.Show();
+        }
+
+        private void goAerolineas_Click(object sender, EventArgs e)
+        {
+            this.header.Text = "AEROLINEAS";
+            this.header.Visible = true;
+            if (clientesForm != null)
+            {
+                clientesForm.Close();
+            }
+            aerolineasForm = new AerolineasVer();
+            aerolineasForm.TopLevel = false;
+            this.container.Controls.Add(aerolineasForm);
+            aerolineasForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            aerolineasForm.Dock = DockStyle.Fill;
+            aerolineasForm.Show();
         }
 
     }

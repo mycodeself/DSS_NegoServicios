@@ -61,6 +61,7 @@
             this.goAerolineas.TabIndex = 2;
             this.goAerolineas.Text = "Aerolineas";
             this.goAerolineas.UseVisualStyleBackColor = true;
+            this.goAerolineas.Click += new System.EventHandler(this.goAerolineas_Click);
             // 
             // goVuelos
             // 

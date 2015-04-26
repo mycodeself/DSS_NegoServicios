@@ -109,6 +109,18 @@
       <DependentUpon>NegoServiciosGenNHibernateDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="UI\AerolineaAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AerolineaAdd.Designer.cs">
+      <DependentUpon>AerolineaAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AerolineasVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AerolineasVer.Designer.cs">
+      <DependentUpon>AerolineasVer.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\ClienteAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +198,12 @@
     <EmbeddedResource Include="Mappings\NegoServicios\aerolinea.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\vuelo.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\reserva.hbm.xml" />
+    <EmbeddedResource Include="UI\AerolineaAdd.resx">
+      <DependentUpon>AerolineaAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AerolineasVer.resx">
+      <DependentUpon>AerolineasVer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\ClienteAdd.resx">
       <DependentUpon>ClienteAdd.cs</DependentUpon>
     </EmbeddedResource>

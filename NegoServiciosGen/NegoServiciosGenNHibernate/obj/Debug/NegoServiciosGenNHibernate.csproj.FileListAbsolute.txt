@@ -71,10 +71,12 @@ C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Iesi.Collections.dll
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Antlr3.Runtime.dll
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\log4net.dll
-C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csprojResolveAssemblyReference.cache
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClienteAdd.resources
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClienteModificar.resources
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ClientesVer.resources
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.Login.resources
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.MainEmpleado.resources
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csproj.GenerateResource.Cache
+C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.AerolineasVer.resources
+C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csprojResolveAssemblyReference.cache
+C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.AerolineaAdd.resources
