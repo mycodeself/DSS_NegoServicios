@@ -80,3 +80,4 @@ C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.AerolineasVer.resources
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csprojResolveAssemblyReference.cache
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.AerolineaAdd.resources
+C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.AerolineaModificar.resources

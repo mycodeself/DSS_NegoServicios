@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using NegoServiciosGenNHibernate.CEN.NegoServicios;
+using NegoServiciosGenNHibernate.CAD.NegoServicios;
+using NegoServiciosGenNHibernate.EN.NegoServicios;
+
 namespace NegoServiciosGenNHibernate.UI
 {
     public partial class AerolineasVer : Form
@@ -41,6 +44,15 @@ namespace NegoServiciosGenNHibernate.UI
             aeroCEN.Destroy(id);
             this.error.Text = "id seleccionado: " + ((DataRowView)this.aerolineaBindingSource.Current).Row["idAerolinea"];
             this.aerolineaTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Aerolinea);
+        }
+
+        private void updUsuario_Click(object sender, EventArgs e)
+        {
+            int id = ((int)((DataRowView)this.aerolineaBindingSource.Current).Row["idAerolinea"]);
+            AerolineaCAD cad = new AerolineaCAD();
+            AerolineaEN aero = cad.ReadOID(id);
+            AerolineaModificar aerolineaForm = new AerolineaModificar(this, aero);
+            aerolineaForm.Show();
         }
     }
 }

@@ -115,6 +115,12 @@
     <Compile Include="UI\AerolineaAdd.Designer.cs">
       <DependentUpon>AerolineaAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\AerolineaModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AerolineaModificar.Designer.cs">
+      <DependentUpon>AerolineaModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\AerolineasVer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     <EmbeddedResource Include="Mappings\NegoServicios\reserva.hbm.xml" />
     <EmbeddedResource Include="UI\AerolineaAdd.resx">
       <DependentUpon>AerolineaAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AerolineaModificar.resx">
+      <DependentUpon>AerolineaModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\AerolineasVer.resx">
       <DependentUpon>AerolineasVer.cs</DependentUpon>

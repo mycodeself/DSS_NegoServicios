@@ -112,6 +112,7 @@
             this.updUsuario.TabIndex = 9;
             this.updUsuario.Text = "Modificar aerolinea";
             this.updUsuario.UseVisualStyleBackColor = true;
+            this.updUsuario.Click += new System.EventHandler(this.updUsuario_Click);
             // 
             // delUsuario
             // 

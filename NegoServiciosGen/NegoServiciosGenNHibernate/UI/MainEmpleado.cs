@@ -21,34 +21,42 @@ namespace NegoServiciosGenNHibernate.UI
 
         private void goClientes_Click(object sender, EventArgs e)
         {
-            this.header.Text = "CLIENTES";
-            this.header.Visible = true;
-            if(aerolineasForm != null)
+            if (clientesForm == null)
             {
-                aerolineasForm.Close();
+                this.header.Text = "CLIENTES";
+                this.header.Visible = true;
+                if (aerolineasForm != null)
+                {
+                    aerolineasForm.Close();
+                    aerolineasForm = null;
+                }
+                clientesForm = new ClientesVer();
+                clientesForm.TopLevel = false;
+                this.container.Controls.Add(clientesForm);
+                clientesForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                clientesForm.Dock = DockStyle.Fill;
+                clientesForm.Show();
             }
-            clientesForm = new ClientesVer();
-            clientesForm.TopLevel = false;
-            this.container.Controls.Add(clientesForm);
-            clientesForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            clientesForm.Dock = DockStyle.Fill;
-            clientesForm.Show();
         }
 
         private void goAerolineas_Click(object sender, EventArgs e)
         {
-            this.header.Text = "AEROLINEAS";
-            this.header.Visible = true;
-            if (clientesForm != null)
+            if (aerolineasForm == null)
             {
-                clientesForm.Close();
+                this.header.Text = "AEROLINEAS";
+                this.header.Visible = true;
+                if (clientesForm != null)
+                {
+                    clientesForm.Close();
+                    clientesForm = null;
+                }
+                aerolineasForm = new AerolineasVer();
+                aerolineasForm.TopLevel = false;
+                this.container.Controls.Add(aerolineasForm);
+                aerolineasForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                aerolineasForm.Dock = DockStyle.Fill;
+                aerolineasForm.Show();
             }
-            aerolineasForm = new AerolineasVer();
-            aerolineasForm.TopLevel = false;
-            this.container.Controls.Add(aerolineasForm);
-            aerolineasForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            aerolineasForm.Dock = DockStyle.Fill;
-            aerolineasForm.Show();
         }
 
     }
