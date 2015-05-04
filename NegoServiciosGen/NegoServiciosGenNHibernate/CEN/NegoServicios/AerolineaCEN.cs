@@ -80,7 +80,7 @@ public System.Collections.Generic.IList<AerolineaEN> ReadAll (int first, int siz
         list = _IAerolineaCAD.ReadAll (first, size);
         return list;
 }
-public System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN> ReadByNombre (string p_nombre)
+public NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN ReadByNombre (string p_nombre)
 {
         return _IAerolineaCAD.ReadByNombre (p_nombre);
 }

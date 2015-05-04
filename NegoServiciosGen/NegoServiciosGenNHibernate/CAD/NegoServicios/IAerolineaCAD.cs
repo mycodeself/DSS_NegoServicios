@@ -22,6 +22,6 @@ AerolineaEN ReadOID (int id);
 System.Collections.Generic.IList<AerolineaEN> ReadAll (int first, int size);
 
 
-System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN> ReadByNombre (string p_nombre);
+NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN ReadByNombre (string p_nombre);
 }
 }

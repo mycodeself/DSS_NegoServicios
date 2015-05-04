@@ -184,9 +184,9 @@ public System.Collections.Generic.IList<AerolineaEN> ReadAll (int first, int siz
         return result;
 }
 
-public System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN> ReadByNombre (string p_nombre)
+public NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN ReadByNombre (string p_nombre)
 {
-        System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN> result;
+        NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN result;
         try
         {
                 SessionInitializeTransaction ();
@@ -195,7 +195,8 @@ public System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServic
                 IQuery query = (IQuery)session.GetNamedQuery ("AerolineaENreadByNombreHQL");
                 query.SetParameter ("p_nombre", p_nombre);
 
-                result = query.List<NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN>();
+
+                result = query.UniqueResult<NegoServiciosGenNHibernate.EN.NegoServicios.AerolineaEN>();
                 SessionCommit ();
         }
 
