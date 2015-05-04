@@ -14,14 +14,20 @@ namespace NegoServiciosGenNHibernate.CEN.NegoServicios
 {
 public partial class UsuarioCEN
 {
-public bool Login (int p_id, string p_password)
+public bool Login (string p_user, string p_password)
 {
         /*PROTECTED REGION ID(NegoServiciosGenNHibernate.CEN.NegoServicios_Usuario_login) ENABLED START*/
 
         // Write here your custom code...
+        UsuarioEN usuarioEN = _IUsuarioCAD.ReadByUsuario (p_user);
 
-        throw new NotImplementedException ("Method Login() not yet implemented.");
-
+        if (usuarioEN == null) {
+                return false;
+        }
+        else if (usuarioEN.Password == p_password) {
+                return true;
+        }
+        return false;
         /*PROTECTED REGION END*/
 }
 }

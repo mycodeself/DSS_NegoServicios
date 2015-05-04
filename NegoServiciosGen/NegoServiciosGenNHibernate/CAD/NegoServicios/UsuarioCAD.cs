@@ -190,9 +190,9 @@ public System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size)
         return result;
 }
 
-public System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServicios.ReservaEN> ReadByUsuario (string p_user)
+public NegoServiciosGenNHibernate.EN.NegoServicios.UsuarioEN ReadByUsuario (string p_user)
 {
-        System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServicios.ReservaEN> result;
+        NegoServiciosGenNHibernate.EN.NegoServicios.UsuarioEN result;
         try
         {
                 SessionInitializeTransaction ();
@@ -201,7 +201,8 @@ public System.Collections.Generic.IList<NegoServiciosGenNHibernate.EN.NegoServic
                 IQuery query = (IQuery)session.GetNamedQuery ("UsuarioENreadByUsuarioHQL");
                 query.SetParameter ("p_user", p_user);
 
-                result = query.List<NegoServiciosGenNHibernate.EN.NegoServicios.ReservaEN>();
+
+                result = query.UniqueResult<NegoServiciosGenNHibernate.EN.NegoServicios.UsuarioEN>();
                 SessionCommit ();
         }
 
