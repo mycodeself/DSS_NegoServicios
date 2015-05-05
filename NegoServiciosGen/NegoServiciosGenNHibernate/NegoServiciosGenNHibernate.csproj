@@ -6,7 +6,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NegoServiciosGenNHibernate</RootNamespace>
     <AssemblyName>NegoServiciosGenNHibernate</AssemblyName>
@@ -45,9 +45,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>NegoServiciosGenNHibernate.Program</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -73,7 +70,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
@@ -99,68 +96,16 @@
     <Content Include="AppLib\nunit.framework.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NegoServiciosGenNHibernateDataSet.cs">
-      <DependentUpon>NegoServiciosGenNHibernateDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="NegoServiciosGenNHibernateDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NegoServiciosGenNHibernateDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="UI\AerolineaAdd.cs">
+    <Compile Include="Interfaces\crear_cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\AerolineaAdd.Designer.cs">
-      <DependentUpon>AerolineaAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\AerolineaModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\AerolineaModificar.Designer.cs">
-      <DependentUpon>AerolineaModificar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\AerolineasVer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\AerolineasVer.Designer.cs">
-      <DependentUpon>AerolineasVer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\ClienteAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\ClienteAdd.Designer.cs">
-      <DependentUpon>ClienteAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\ClienteModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\ClienteModificar.Designer.cs">
-      <DependentUpon>ClienteModificar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\ClientesVer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\ClientesVer.Designer.cs">
-      <DependentUpon>ClientesVer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\MainEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\MainEmpleado.Designer.cs">
-      <DependentUpon>MainEmpleado.cs</DependentUpon>
+    <Compile Include="Interfaces\crear_cliente.Designer.cs">
+      <DependentUpon>crear_cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils\Util.cs" />
     <Compile Include="NHibernateHelper.cs" />
-    <Compile Include="Exceptions\ModelException.cs" />
-    <Compile Include="Exceptions\DataLayerException.cs" />
+    <Compile Include="Enumerated\Exceptions\ModelException.cs" />
+    <Compile Include="Enumerated\Exceptions\DataLayerException.cs" />
     <Compile Include="CAD\BasicCAD.cs" />
     <Compile Include="EN\NegoServicios\UsuarioEN.cs" />
     <Compile Include="CEN\NegoServicios\UsuarioCEN.cs" />
@@ -198,36 +143,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Interfaces\crear_cliente.resx">
+      <DependentUpon>crear_cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mappings\NegoServicios\usuario.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\cliente.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\empleado.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\aerolinea.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\vuelo.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\reserva.hbm.xml" />
-    <EmbeddedResource Include="UI\AerolineaAdd.resx">
-      <DependentUpon>AerolineaAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\AerolineaModificar.resx">
-      <DependentUpon>AerolineaModificar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\AerolineasVer.resx">
-      <DependentUpon>AerolineasVer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\ClienteAdd.resx">
-      <DependentUpon>ClienteAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\ClienteModificar.resx">
-      <DependentUpon>ClienteModificar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\ClientesVer.resx">
-      <DependentUpon>ClientesVer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\MainEmpleado.resx">
-      <DependentUpon>MainEmpleado.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="hibernate.cfg.xml">
@@ -235,18 +159,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="NegoServiciosGenNHibernateDataSet.xsc">
-      <DependentUpon>NegoServiciosGenNHibernateDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="NegoServiciosGenNHibernateDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>NegoServiciosGenNHibernateDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NegoServiciosGenNHibernateDataSet.xss">
-      <DependentUpon>NegoServiciosGenNHibernateDataSet.xsd</DependentUpon>
-    </None>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -258,7 +171,6 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 		       Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\InitializeDB.exe.config
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\hibernate.cfg.xml
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\InitializeDB.exe
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\InitializeDB.pdb
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\Antlr3.Runtime.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\Castle.DynamicProxy2.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\Iesi.Collections.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\LinFu.DynamicProxy.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\log4net.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\NegoServiciosGenNHibernate.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\NHibernate.ByteCode.LinFu.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\NHibernate.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\nunit.core.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\NegoServiciosGenNHibernate.pdb
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.exe
+C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.pdb
+=======
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\InitializeDB.exe.config
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\hibernate.cfg.xml
 C:\Documents and Settings\ooh4riaUser\Desktop\eclipse\workspace\NegoServiciosGen\InitializeDB\bin\Debug\InitializeDB.exe
@@ -74,3 +95,4 @@ C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\InitializeDB\bin\Debug\Nego
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.csprojResolveAssemblyReference.cache
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.exe
 C:\Users\Isma\Dropbox\Uniii\DSS\git\NegoServiciosGen\InitializeDB\obj\x86\Debug\InitializeDB.pdb
+>>>>>>> origin/master
