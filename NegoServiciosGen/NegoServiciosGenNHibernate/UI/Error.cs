@@ -11,12 +11,17 @@ namespace NegoServiciosGenNHibernate.UI
 {
     public partial class Error : Form
     {
-        public Error()
+        public Error(string text)
         {
             InitializeComponent();
+            Texto_error.Text = text;
         }
 
         private void Error_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
