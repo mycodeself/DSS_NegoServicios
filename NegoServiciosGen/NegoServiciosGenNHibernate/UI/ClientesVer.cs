@@ -26,6 +26,7 @@ namespace NegoServiciosGenNHibernate.UI
             this.clienteTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Cliente);
 
             this.refreshData();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void updUsuario_Click(object sender, EventArgs e)
@@ -54,6 +55,48 @@ namespace NegoServiciosGenNHibernate.UI
         {
             ClienteAdd addForm = new ClienteAdd(this);
             addForm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BindingSource bs = new BindingSource();
+                bs.DataSource = dataGridView.DataSource;
+                if (comboBox1.SelectedItem.ToString() == "IdUsuario")
+                {
+                    if (textBox1.Text == "")
+                    {
+                        bs.Filter = "usuario LIKE '%" + textBox1.Text + "'";//trampa para que no encuentre nada y asi me vuelva a sacar todas las tuplas
+                    }
+                    else
+                    {
+                        bs.Filter = comboBox1.SelectedItem.ToString() + " = '" + textBox1.Text + "'";
+                    }
+                }
+                else
+                {
+                    bs.Filter = comboBox1.SelectedItem.ToString() + " LIKE '%" + textBox1.Text + "'";
+                }
+                dataGridView.DataSource = bs;
+            }
+            catch(EvaluateException ex)
+            {
+                BindingSource bs = new BindingSource();
+                bs.DataSource = dataGridView.DataSource;
+                bs.Filter = comboBox1.SelectedItem.ToString() + " = null";
+                dataGridView.DataSource = bs;
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
