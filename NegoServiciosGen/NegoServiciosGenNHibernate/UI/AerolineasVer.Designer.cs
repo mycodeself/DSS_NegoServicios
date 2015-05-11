@@ -39,6 +39,10 @@
             this.updUsuario = new System.Windows.Forms.Button();
             this.delUsuario = new System.Windows.Forms.Button();
             this.addUsuario = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aerolineaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).BeginInit();
@@ -136,6 +140,45 @@
             this.addUsuario.UseVisualStyleBackColor = true;
             this.addUsuario.Click += new System.EventHandler(this.addUsuario_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(410, 297);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Buscar por:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "idAerolinea",
+            "nombre"});
+            this.comboBox1.Location = new System.Drawing.Point(477, 293);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(76, 21);
+            this.comboBox1.TabIndex = 12;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(559, 293);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 13;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(665, 292);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(63, 21);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AerolineasVer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +186,10 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(740, 333);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.error);
             this.Controls.Add(this.updUsuario);
             this.Controls.Add(this.delUsuario);
@@ -173,5 +220,9 @@
         private System.Windows.Forms.Button updUsuario;
         private System.Windows.Forms.Button delUsuario;
         private System.Windows.Forms.Button addUsuario;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

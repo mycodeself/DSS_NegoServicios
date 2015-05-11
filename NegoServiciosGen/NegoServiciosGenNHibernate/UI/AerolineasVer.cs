@@ -23,7 +23,8 @@ namespace NegoServiciosGenNHibernate.UI
         {
             // TODO: esta línea de código carga datos en la tabla 'negoServiciosGenNHibernateDataSet.Aerolinea' Puede moverla o quitarla según sea necesario.
             this.aerolineaTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Aerolinea);
-
+            this.refreshData();
+            comboBox1.SelectedIndex = 0;
         }
 
         public void refreshData()
@@ -53,6 +54,48 @@ namespace NegoServiciosGenNHibernate.UI
             AerolineaEN aero = cad.ReadOID(id);
             AerolineaModificar aerolineaForm = new AerolineaModificar(this, aero);
             aerolineaForm.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BindingSource bs = new BindingSource();
+                bs.DataSource = dataGridView.DataSource;
+                if (comboBox1.SelectedItem.ToString() == "idAerolinea")
+                {
+                    if (textBox1.Text == "")
+                    {
+                        bs.Filter = "nombre LIKE '%" + textBox1.Text + "'";//trampa para que no encuentre nada y asi me vuelva a sacar todas las tuplas
+                    }
+                    else
+                    {
+                        bs.Filter = comboBox1.SelectedItem.ToString() + " = '" + textBox1.Text + "'";
+                    }
+                }
+                else
+                {
+                    bs.Filter = comboBox1.SelectedItem.ToString() + " LIKE '%" + textBox1.Text + "'";
+                }
+                dataGridView.DataSource = bs;
+            }
+            catch (EvaluateException ex)
+            {
+                BindingSource bs = new BindingSource();
+                bs.DataSource = dataGridView.DataSource;
+                bs.Filter = comboBox1.SelectedItem.ToString() + " = null";
+                dataGridView.DataSource = bs;
+            }
         }
     }
 }

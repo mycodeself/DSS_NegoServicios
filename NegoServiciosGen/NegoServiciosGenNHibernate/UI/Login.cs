@@ -52,5 +52,10 @@ namespace NegoServiciosGenNHibernate.UI
             }
             return true;
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
