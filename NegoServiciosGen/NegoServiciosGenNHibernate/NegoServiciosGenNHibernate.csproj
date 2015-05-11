@@ -151,6 +151,12 @@
     <Compile Include="UI\Error.Designer.cs">
       <DependentUpon>Error.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Reservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reservas.Designer.cs">
+      <DependentUpon>Reservas.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,12 @@
     </Compile>
     <Compile Include="UI\MainEmpleado.Designer.cs">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Vuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Vuelos.Designer.cs">
+      <DependentUpon>Vuelos.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils\Util.cs" />
     <Compile Include="NHibernateHelper.cs" />
@@ -236,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainEmpleado.resx">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reservas.resx">
+      <DependentUpon>Reservas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
