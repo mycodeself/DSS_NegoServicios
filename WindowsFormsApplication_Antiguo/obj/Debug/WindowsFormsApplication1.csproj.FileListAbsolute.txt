@@ -14,3 +14,6 @@ D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\De
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Carlos\Documents\GitHub\DSS_NegoServicios\WindowsFormsApplication_Antiguo\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Carlos\Documents\GitHub\DSS_NegoServicios\WindowsFormsApplication_Antiguo\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Carlos\Documents\GitHub\DSS_NegoServicios\WindowsFormsApplication_Antiguo\obj\Debug\WindowsFormsApplication1.pdb

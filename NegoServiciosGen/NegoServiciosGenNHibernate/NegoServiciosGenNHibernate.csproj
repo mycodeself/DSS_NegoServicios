@@ -145,18 +145,6 @@
     <Compile Include="UI\ClientesVer.Designer.cs">
       <DependentUpon>ClientesVer.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Error.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Error.Designer.cs">
-      <DependentUpon>Error.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Reservas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Reservas.Designer.cs">
-      <DependentUpon>Reservas.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,11 +157,11 @@
     <Compile Include="UI\MainEmpleado.Designer.cs">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Vuelos.cs">
+    <Compile Include="UI\pantallaError.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Vuelos.Designer.cs">
-      <DependentUpon>Vuelos.cs</DependentUpon>
+    <Compile Include="UI\pantallaError.Designer.cs">
+      <DependentUpon>pantallaError.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils\Util.cs" />
     <Compile Include="NHibernateHelper.cs" />
@@ -240,17 +228,14 @@
     <EmbeddedResource Include="UI\ClientesVer.resx">
       <DependentUpon>ClientesVer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Error.resx">
-      <DependentUpon>Error.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainEmpleado.resx">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Reservas.resx">
-      <DependentUpon>Reservas.cs</DependentUpon>
+    <EmbeddedResource Include="UI\pantallaError.resx">
+      <DependentUpon>pantallaError.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

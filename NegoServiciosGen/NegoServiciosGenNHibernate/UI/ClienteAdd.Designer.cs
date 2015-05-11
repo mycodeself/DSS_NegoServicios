@@ -124,6 +124,7 @@
             this.error.TabIndex = 9;
             this.error.Text = "Error";
             this.error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.error.Visible = false;
             // 
             // ClienteAdd
             // 
