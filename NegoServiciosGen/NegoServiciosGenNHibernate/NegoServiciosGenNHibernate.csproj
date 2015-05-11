@@ -157,6 +157,12 @@
     <Compile Include="UI\MainEmpleado.Designer.cs">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\pantallaError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\pantallaError.Designer.cs">
+      <DependentUpon>pantallaError.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Util.cs" />
     <Compile Include="NHibernateHelper.cs" />
     <Compile Include="Exceptions\ModelException.cs" />
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainEmpleado.resx">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\pantallaError.resx">
+      <DependentUpon>pantallaError.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
