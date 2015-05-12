@@ -56,5 +56,10 @@ namespace NegoServiciosGenNHibernate.UI
             addForm.Show();
         }
 
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }

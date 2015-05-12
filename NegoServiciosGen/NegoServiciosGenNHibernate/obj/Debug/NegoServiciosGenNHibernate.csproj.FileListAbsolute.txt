@@ -106,3 +106,4 @@ D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\bin\
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\Antlr3.Runtime.dll
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\bin\Debug\log4net.dll
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.pdb
+D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.Reservas.resources

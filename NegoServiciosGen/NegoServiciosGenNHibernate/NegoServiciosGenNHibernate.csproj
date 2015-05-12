@@ -252,6 +252,9 @@
     <EmbeddedResource Include="UI\Reservas.resx">
       <DependentUpon>Reservas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Vuelos.resx">
+      <DependentUpon>Vuelos.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="hibernate.cfg.xml">
