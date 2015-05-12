@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using NegoServiciosGenNHibernate.CEN.NegoServicios;
+using System.Text.RegularExpressions;
 
 namespace NegoServiciosGenNHibernate.UI
 {
@@ -23,15 +24,51 @@ namespace NegoServiciosGenNHibernate.UI
         {
             try
             {
-                ClienteCEN cen = new ClienteCEN();
-                cen.New_(this.usuario.Text, this.password.Text, this.email.Text, this.dni.Text);
-                verClientesForm.refreshData();
-                this.Close();
+                String errores = compruebaDatos();
+                if (errores == "")
+                {
+                    ClienteCEN cen = new ClienteCEN();
+                    cen.New_(this.usuario.Text, this.password.Text, this.email.Text, this.dni.Text);
+                    verClientesForm.refreshData();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show(errores);
+
+                }
+
             }
             catch(NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)
             {
                 this.error.Text = ex.Message;
             }
+        }
+        private String compruebaDatos()
+        {
+            Regex nomb = new Regex("^[a-zA-Z0-9]");
+            Regex correo= new Regex ("(@)(.+)$");
+            String s = "";
+
+            if (usuario.Text == "" || password.Text == "" || email.Text == "" || dni == null)
+            {
+                s = s + "Rellene todos los campos.";
+                return s;
+            }
+            else
+            {
+                if (!nomb.IsMatch(usuario.Text))
+                {
+                    s = s + "Nombre de Usuario incorrecto. Utilice solo carácteres alfanuméricos.\n";
+                }
+                if (!correo.IsMatch(email.Text))
+                {
+                    s = s + "Formato de direccion de correo invalido.\n";
+                }
+
+                return s;
+            }
+                
         }
 
     }
