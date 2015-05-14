@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace NegoServiciosGenNHibernate.UI
 {
-    public partial class Form1 : Form
+    public partial class Vuelos : Form
     {
-        public Form1()
+        public Vuelos()
         {
             InitializeComponent();
         }

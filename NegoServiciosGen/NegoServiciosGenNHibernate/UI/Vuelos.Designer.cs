@@ -1,6 +1,6 @@
 ﻿namespace NegoServiciosGenNHibernate.UI
 {
-    partial class Form1
+    partial class Vuelos
     {
         /// <summary>
         /// Required designer variable.
@@ -162,15 +162,15 @@
             this.id_vuelo_textbox.Size = new System.Drawing.Size(100, 20);
             this.id_vuelo_textbox.TabIndex = 2;
             // 
-            // Form1
+            // Vuelos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 334);
+            this.ClientSize = new System.Drawing.Size(1066, 309);
             this.Controls.Add(this.id_vuelo_textbox);
             this.Controls.Add(this.label_vuelo);
             this.Controls.Add(this.dataGridView_vuelos);
-            this.Name = "Form1";
+            this.Name = "Vuelos";
             this.Text = "Vuelos";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_vuelos)).EndInit();
