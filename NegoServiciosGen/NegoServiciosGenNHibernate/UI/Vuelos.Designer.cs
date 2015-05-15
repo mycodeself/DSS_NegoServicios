@@ -30,9 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView_vuelos = new System.Windows.Forms.DataGridView();
-            this.negoServiciosGenNHibernateDataSet = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSet();
             this.vueloBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.negoServiciosGenNHibernateDataSet = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSet();
             this.vueloTableAdapter = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSetTableAdapters.VueloTableAdapter();
+            this.label_vuelo = new System.Windows.Forms.Label();
+            this.id_vuelo_textbox = new System.Windows.Forms.TextBox();
             this.idVueloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.origenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.destinoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,11 +45,9 @@
             this.plazasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioplazaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label_vuelo = new System.Windows.Forms.Label();
-            this.id_vuelo_textbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_vuelos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueloBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView_vuelos
@@ -71,19 +71,35 @@
             this.dataGridView_vuelos.Size = new System.Drawing.Size(1042, 250);
             this.dataGridView_vuelos.TabIndex = 0;
             // 
-            // negoServiciosGenNHibernateDataSet
-            // 
-            this.negoServiciosGenNHibernateDataSet.DataSetName = "NegoServiciosGenNHibernateDataSet";
-            this.negoServiciosGenNHibernateDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // vueloBindingSource
             // 
             this.vueloBindingSource.DataMember = "Vuelo";
             this.vueloBindingSource.DataSource = this.negoServiciosGenNHibernateDataSet;
             // 
+            // negoServiciosGenNHibernateDataSet
+            // 
+            this.negoServiciosGenNHibernateDataSet.DataSetName = "NegoServiciosGenNHibernateDataSet";
+            this.negoServiciosGenNHibernateDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // vueloTableAdapter
             // 
             this.vueloTableAdapter.ClearBeforeFill = true;
+            // 
+            // label_vuelo
+            // 
+            this.label_vuelo.AutoSize = true;
+            this.label_vuelo.Location = new System.Drawing.Point(9, 20);
+            this.label_vuelo.Name = "label_vuelo";
+            this.label_vuelo.Size = new System.Drawing.Size(101, 13);
+            this.label_vuelo.TabIndex = 1;
+            this.label_vuelo.Text = "Introduzca ID Vuelo";
+            // 
+            // id_vuelo_textbox
+            // 
+            this.id_vuelo_textbox.Location = new System.Drawing.Point(135, 17);
+            this.id_vuelo_textbox.Name = "id_vuelo_textbox";
+            this.id_vuelo_textbox.Size = new System.Drawing.Size(100, 20);
+            this.id_vuelo_textbox.TabIndex = 2;
             // 
             // idVueloDataGridViewTextBoxColumn
             // 
@@ -143,24 +159,8 @@
             // fKidAerolineaidAerolineaDataGridViewTextBoxColumn
             // 
             this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.DataPropertyName = "FK_idAerolinea_idAerolinea";
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.HeaderText = "FK_idAerolinea_idAerolinea";
+            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.HeaderText = "idAerolinea";
             this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.Name = "fKidAerolineaidAerolineaDataGridViewTextBoxColumn";
-            // 
-            // label_vuelo
-            // 
-            this.label_vuelo.AutoSize = true;
-            this.label_vuelo.Location = new System.Drawing.Point(9, 20);
-            this.label_vuelo.Name = "label_vuelo";
-            this.label_vuelo.Size = new System.Drawing.Size(101, 13);
-            this.label_vuelo.TabIndex = 1;
-            this.label_vuelo.Text = "Introduzca ID Vuelo";
-            // 
-            // id_vuelo_textbox
-            // 
-            this.id_vuelo_textbox.Location = new System.Drawing.Point(135, 17);
-            this.id_vuelo_textbox.Name = "id_vuelo_textbox";
-            this.id_vuelo_textbox.Size = new System.Drawing.Size(100, 20);
-            this.id_vuelo_textbox.TabIndex = 2;
             // 
             // Vuelos
             // 
@@ -174,8 +174,8 @@
             this.Text = "Vuelos";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_vuelos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueloBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +187,8 @@
         private NegoServiciosGenNHibernateDataSet negoServiciosGenNHibernateDataSet;
         private System.Windows.Forms.BindingSource vueloBindingSource;
         private NegoServiciosGenNHibernateDataSetTableAdapters.VueloTableAdapter vueloTableAdapter;
+        private System.Windows.Forms.Label label_vuelo;
+        private System.Windows.Forms.TextBox id_vuelo_textbox;
         private System.Windows.Forms.DataGridViewTextBoxColumn idVueloDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn origenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn destinoDataGridViewTextBoxColumn;
@@ -197,7 +199,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn plazasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioplazaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fKidAerolineaidAerolineaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label_vuelo;
-        private System.Windows.Forms.TextBox id_vuelo_textbox;
     }
 }

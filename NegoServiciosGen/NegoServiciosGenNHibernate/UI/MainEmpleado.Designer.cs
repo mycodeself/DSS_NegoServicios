@@ -71,6 +71,7 @@
             this.goVuelos.TabIndex = 3;
             this.goVuelos.Text = "Vuelos";
             this.goVuelos.UseVisualStyleBackColor = true;
+            this.goVuelos.Click += new System.EventHandler(this.goVuelos_Click);
             // 
             // verReservas
             // 
@@ -80,6 +81,7 @@
             this.verReservas.TabIndex = 4;
             this.verReservas.Text = "Reservas";
             this.verReservas.UseVisualStyleBackColor = true;
+            this.verReservas.Click += new System.EventHandler(this.verReservas_Click);
             // 
             // header
             // 
