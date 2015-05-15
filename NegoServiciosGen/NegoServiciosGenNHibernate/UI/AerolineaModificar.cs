@@ -42,5 +42,10 @@ namespace NegoServiciosGenNHibernate.UI
             }
         }
 
+        private void error_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

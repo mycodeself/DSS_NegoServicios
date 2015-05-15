@@ -45,6 +45,7 @@
             this.error.TabIndex = 7;
             this.error.Text = "Error";
             this.error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.error.Click += new System.EventHandler(this.error_Click);
             // 
             // submit
             // 
@@ -76,6 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(284, 212);
             this.Controls.Add(this.error);
             this.Controls.Add(this.submit);

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,10 +57,11 @@
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.AutoGenerateColumns = false;
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -128,34 +129,37 @@
             // addUsuario
             // 
             this.addUsuario.AutoSize = true;
+            this.addUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.addUsuario.Location = new System.Drawing.Point(12, 283);
             this.addUsuario.Name = "addUsuario";
             this.addUsuario.Size = new System.Drawing.Size(84, 38);
             this.addUsuario.TabIndex = 3;
             this.addUsuario.Text = "Añadir usuario";
-            this.addUsuario.UseVisualStyleBackColor = true;
+            this.addUsuario.UseVisualStyleBackColor = false;
             this.addUsuario.Click += new System.EventHandler(this.addUsuario_Click);
             // 
             // delUsuario
             // 
             this.delUsuario.AutoSize = true;
+            this.delUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.delUsuario.Location = new System.Drawing.Point(205, 283);
             this.delUsuario.Name = "delUsuario";
             this.delUsuario.Size = new System.Drawing.Size(90, 38);
             this.delUsuario.TabIndex = 4;
             this.delUsuario.Text = "Eliminar usuario";
-            this.delUsuario.UseVisualStyleBackColor = true;
+            this.delUsuario.UseVisualStyleBackColor = false;
             this.delUsuario.Click += new System.EventHandler(this.delUsuario_Click);
             // 
             // updUsuario
             // 
             this.updUsuario.AutoSize = true;
+            this.updUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.updUsuario.Location = new System.Drawing.Point(102, 283);
             this.updUsuario.Name = "updUsuario";
             this.updUsuario.Size = new System.Drawing.Size(97, 38);
             this.updUsuario.TabIndex = 5;
             this.updUsuario.Text = "Modificar usuario";
-            this.updUsuario.UseVisualStyleBackColor = true;
+            this.updUsuario.UseVisualStyleBackColor = false;
             this.updUsuario.Click += new System.EventHandler(this.updUsuario_Click);
             // 
             // error
@@ -181,12 +185,13 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button1.Location = new System.Drawing.Point(665, 297);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(63, 21);
             this.button1.TabIndex = 8;
             this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
@@ -219,6 +224,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(740, 333);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
@@ -230,6 +236,7 @@
             this.Controls.Add(this.delUsuario);
             this.Controls.Add(this.addUsuario);
             this.Controls.Add(this.dataGridView);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ClientesVer";

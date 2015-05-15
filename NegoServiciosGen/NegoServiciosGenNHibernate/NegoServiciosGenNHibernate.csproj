@@ -97,6 +97,13 @@
     <Content Include="AppLib\NHibernate.dll" />
     <Content Include="AppLib\nunit.core.dll" />
     <Content Include="AppLib\nunit.framework.dll" />
+    <None Include="Resources\TVwuCZPr5.jpeg" />
+    <None Include="Resources\TVwuCZPr4.jpeg" />
+    <None Include="Resources\TVwuCZPr3.jpeg" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\TVwuCZPr2.jpeg" />
+    <None Include="Resources\TVwuCZPr1.jpeg" />
+    <None Include="Resources\TVwuCZPr.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NegoServiciosGenNHibernateDataSet.cs">
@@ -109,6 +116,11 @@
       <DependentUpon>NegoServiciosGenNHibernateDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\AerolineaAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,17 +157,11 @@
     <Compile Include="UI\ClientesVer.Designer.cs">
       <DependentUpon>ClientesVer.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Reservas.cs">
+    <Compile Include="UI\ReservasVer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Reservas.Designer.cs">
-      <DependentUpon>Reservas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Vuelos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Vuelos.Designer.cs">
-      <DependentUpon>Vuelos.cs</DependentUpon>
+    <Compile Include="UI\ReservasVer.Designer.cs">
+      <DependentUpon>ReservasVer.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
@@ -168,6 +174,12 @@
     </Compile>
     <Compile Include="UI\MainEmpleado.Designer.cs">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VuelosVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VuelosVer.Designer.cs">
+      <DependentUpon>VuelosVer.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils\Util.cs" />
     <Compile Include="NHibernateHelper.cs" />
@@ -216,6 +228,10 @@
     <EmbeddedResource Include="Mappings\NegoServicios\aerolinea.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\vuelo.hbm.xml" />
     <EmbeddedResource Include="Mappings\NegoServicios\reserva.hbm.xml" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\AerolineaAdd.resx">
       <DependentUpon>AerolineaAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,11 +256,11 @@
     <EmbeddedResource Include="UI\MainEmpleado.resx">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Reservas.resx">
-      <DependentUpon>Reservas.cs</DependentUpon>
+    <EmbeddedResource Include="UI\ReservasVer.resx">
+      <DependentUpon>ReservasVer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Vuelos.resx">
-      <DependentUpon>Vuelos.cs</DependentUpon>
+    <EmbeddedResource Include="UI\VuelosVer.resx">
+      <DependentUpon>VuelosVer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -38,58 +38,66 @@
             // 
             // goClientes
             // 
+            this.goClientes.BackColor = System.Drawing.Color.White;
             this.goClientes.Location = new System.Drawing.Point(85, 12);
             this.goClientes.Name = "goClientes";
             this.goClientes.Size = new System.Drawing.Size(127, 73);
             this.goClientes.TabIndex = 0;
             this.goClientes.Text = "Clientes";
-            this.goClientes.UseVisualStyleBackColor = true;
+            this.goClientes.UseVisualStyleBackColor = false;
             this.goClientes.Click += new System.EventHandler(this.goClientes_Click);
             // 
             // container
             // 
+            this.container.BackColor = System.Drawing.Color.Transparent;
+            this.container.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.container.Location = new System.Drawing.Point(12, 150);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(756, 451);
+            this.container.Size = new System.Drawing.Size(756, 382);
             this.container.TabIndex = 1;
+            this.container.Paint += new System.Windows.Forms.PaintEventHandler(this.container_Paint);
             // 
             // goAerolineas
             // 
+            this.goAerolineas.BackColor = System.Drawing.Color.White;
             this.goAerolineas.Location = new System.Drawing.Point(239, 12);
             this.goAerolineas.Name = "goAerolineas";
             this.goAerolineas.Size = new System.Drawing.Size(127, 73);
             this.goAerolineas.TabIndex = 2;
             this.goAerolineas.Text = "Aerolineas";
-            this.goAerolineas.UseVisualStyleBackColor = true;
+            this.goAerolineas.UseVisualStyleBackColor = false;
             this.goAerolineas.Click += new System.EventHandler(this.goAerolineas_Click);
             // 
             // goVuelos
             // 
+            this.goVuelos.BackColor = System.Drawing.Color.White;
             this.goVuelos.Location = new System.Drawing.Point(393, 12);
             this.goVuelos.Name = "goVuelos";
             this.goVuelos.Size = new System.Drawing.Size(127, 73);
             this.goVuelos.TabIndex = 3;
             this.goVuelos.Text = "Vuelos";
-            this.goVuelos.UseVisualStyleBackColor = true;
+            this.goVuelos.UseVisualStyleBackColor = false;
             this.goVuelos.Click += new System.EventHandler(this.goVuelos_Click);
             // 
             // verReservas
             // 
+            this.verReservas.BackColor = System.Drawing.Color.White;
             this.verReservas.Location = new System.Drawing.Point(547, 12);
             this.verReservas.Name = "verReservas";
             this.verReservas.Size = new System.Drawing.Size(127, 73);
             this.verReservas.TabIndex = 4;
             this.verReservas.Text = "Reservas";
-            this.verReservas.UseVisualStyleBackColor = true;
+            this.verReservas.UseVisualStyleBackColor = false;
             this.verReservas.Click += new System.EventHandler(this.verReservas_Click);
             // 
             // header
             // 
             this.header.AutoSize = true;
-            this.header.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.header.BackColor = System.Drawing.Color.Transparent;
+            this.header.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.header.Location = new System.Drawing.Point(39, 101);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(112, 31);
+            this.header.Size = new System.Drawing.Size(115, 36);
             this.header.TabIndex = 5;
             this.header.Text = "TITULO";
             this.header.Visible = false;
@@ -98,6 +106,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::NegoServiciosGenNHibernate.Properties.Resources.fondo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(780, 613);
             this.Controls.Add(this.header);
             this.Controls.Add(this.verReservas);

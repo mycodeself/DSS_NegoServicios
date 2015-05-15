@@ -13,8 +13,8 @@ namespace NegoServiciosGenNHibernate.UI
     {
         ClientesVer clientesForm;
         AerolineasVer aerolineasForm;
-        Reservas reservasForm;
-        Vuelos vuelosForm;
+        VuelosVer vuelosForm;
+        ReservasVer reservasForm;
 
         public MainEmpleado()
         {
@@ -32,14 +32,14 @@ namespace NegoServiciosGenNHibernate.UI
                     aerolineasForm.Close();
                     aerolineasForm = null;
                 }
-                if (reservasForm != null)
-                {
-                    reservasForm.Close();
-                    reservasForm = null;
-                }
-                if (vuelosForm != null)
+                else if (vuelosForm != null)
                 {
                     vuelosForm.Close();
+                    vuelosForm = null;
+                }
+                else if (reservasForm != null)
+                {
+                    reservasForm.Close();
                     reservasForm = null;
                 }
                 clientesForm = new ClientesVer();
@@ -62,14 +62,14 @@ namespace NegoServiciosGenNHibernate.UI
                     clientesForm.Close();
                     clientesForm = null;
                 }
-                if (reservasForm != null)
-                {
-                    reservasForm.Close();
-                    reservasForm = null;
-                }
-                if (vuelosForm != null)
+                else if (vuelosForm != null)
                 {
                     vuelosForm.Close();
+                    vuelosForm = null;
+                }
+                else if (reservasForm != null)
+                {
+                    reservasForm.Close();
                     reservasForm = null;
                 }
                 aerolineasForm = new AerolineasVer();
@@ -81,28 +81,33 @@ namespace NegoServiciosGenNHibernate.UI
             }
         }
 
+        private void container_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void goVuelos_Click(object sender, EventArgs e)
         {
             if (vuelosForm == null)
             {
                 this.header.Text = "VUELOS";
                 this.header.Visible = true;
-                if (clientesForm != null)
-                {
-                    clientesForm.Close();
-                    clientesForm = null;
-                }
-                if (reservasForm != null)
-                {
-                    reservasForm.Close();
-                    reservasForm = null;
-                }
                 if (aerolineasForm != null)
                 {
                     aerolineasForm.Close();
                     aerolineasForm = null;
                 }
-                vuelosForm = new Vuelos();
+                else if (clientesForm != null)
+                {
+                    clientesForm.Close();
+                    clientesForm = null;
+                }
+                else if (reservasForm != null)
+                {
+                    reservasForm.Close();
+                    reservasForm = null;
+                }
+                vuelosForm = new VuelosVer();
                 vuelosForm.TopLevel = false;
                 this.container.Controls.Add(vuelosForm);
                 vuelosForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -117,28 +122,32 @@ namespace NegoServiciosGenNHibernate.UI
             {
                 this.header.Text = "RESERVAS";
                 this.header.Visible = true;
-                if (clientesForm != null)
-                {
-                    clientesForm.Close();
-                    clientesForm = null;
-                }
-                if (aerolineasForm != null)
+                if(aerolineasForm!=null)
                 {
                     aerolineasForm.Close();
                     aerolineasForm = null;
                 }
-                if (vuelosForm != null)
+                else if (vuelosForm != null)
                 {
                     vuelosForm.Close();
-                    reservasForm = null;
+                    vuelosForm = null;
                 }
-                aerolineasForm = new AerolineasVer();
-                aerolineasForm.TopLevel = false;
-                this.container.Controls.Add(aerolineasForm);
-                aerolineasForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-                aerolineasForm.Dock = DockStyle.Fill;
-                aerolineasForm.Show();
+                else if (clientesForm != null)
+                {
+                    clientesForm.Close();
+                    clientesForm = null;
+                }
+                reservasForm = new ReservasVer();
+                reservasForm.TopLevel = false;
+                
+                this.container.Controls.Add(reservasForm);
+                reservasForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                reservasForm.Dock = DockStyle.Fill;
+                reservasForm.Show();
+
             }
+
+
         }
 
     }
