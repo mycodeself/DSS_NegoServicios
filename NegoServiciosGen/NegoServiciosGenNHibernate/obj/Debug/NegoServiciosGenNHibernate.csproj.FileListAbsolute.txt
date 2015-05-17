@@ -209,13 +209,11 @@ C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHi
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasVer.resources
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.VuelosVer.resources
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csproj.GenerateResource.Cache
-<<<<<<< HEAD
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasAdd.resources
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.VuelosAdd.resources
-=======
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.Properties.Resources.resources
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasAdd.resources
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasModificar.resources
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasVer.resources
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.VuelosVer.resources
->>>>>>> origin/master
+C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasModificar.resources

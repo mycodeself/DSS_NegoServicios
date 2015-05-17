@@ -22,7 +22,7 @@ namespace NegoServiciosGenNHibernate.UI
         {
             try
             {
-                if (aerolinea.Text == "")
+                if (aerolinea.Text != "")
                 {
                     AerolineaCEN cen = new AerolineaCEN();
                     cen.New_(aerolinea.Text);

@@ -72,5 +72,10 @@ namespace NegoServiciosGenNHibernate.UI
                 
         }
 
+        private void ClienteAdd_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -131,6 +131,7 @@
             this.Name = "ClienteAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Añadir cliente";
+            this.Load += new System.EventHandler(this.ClienteAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
