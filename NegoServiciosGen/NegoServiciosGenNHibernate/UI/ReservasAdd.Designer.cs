@@ -112,6 +112,7 @@
             this.confirmar_button.TabIndex = 8;
             this.confirmar_button.Text = "Confirmar";
             this.confirmar_button.UseVisualStyleBackColor = true;
+            this.confirmar_button.Click += new System.EventHandler(this.confirmar_button_Click);
             // 
             // ReservasAdd
             // 
