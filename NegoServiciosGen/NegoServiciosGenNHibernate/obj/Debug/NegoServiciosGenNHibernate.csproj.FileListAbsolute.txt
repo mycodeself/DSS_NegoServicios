@@ -210,3 +210,5 @@ C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHi
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasVer.resources
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.VuelosVer.resources
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasAdd.resources
+C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.VuelosAdd.resources

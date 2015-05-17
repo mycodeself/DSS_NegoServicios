@@ -22,10 +22,17 @@ namespace NegoServiciosGenNHibernate.UI
         {
             try
             {
-                AerolineaCEN cen = new AerolineaCEN();
-                cen.New_(aerolinea.Text);
-                aerolineaForm.refreshData();
-                this.Close();
+                if (aerolinea.Text == "")
+                {
+                    AerolineaCEN cen = new AerolineaCEN();
+                    cen.New_(aerolinea.Text);
+                    aerolineaForm.refreshData();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Debe introducir un nombre de la aerolinea.");
+                }
             }
             catch (NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)
             {

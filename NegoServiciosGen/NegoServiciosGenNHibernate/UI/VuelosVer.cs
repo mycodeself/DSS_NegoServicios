@@ -66,5 +66,11 @@ namespace NegoServiciosGenNHibernate.UI
                 dataGridView1.DataSource = bs;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            VuelosAdd vAdd = new VuelosAdd(this);
+            vAdd.Show();
+        }
     }
 }
