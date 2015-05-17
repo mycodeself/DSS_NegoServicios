@@ -56,6 +56,7 @@ namespace NegoServiciosGenNHibernate.UI
                 ReservaCAD cad = new ReservaCAD();
                 cad.Modify(reserva);
                 reserva_form.refreshData();
+                this.Close();
             }
         }
     }

@@ -78,7 +78,7 @@ namespace NegoServiciosGenNHibernate.UI
             int id = ((int)((DataRowView)this.vueloBindingSource.Current).Row["idVuelo"]);
             VueloCAD cad = new VueloCAD();
             VueloEN vuelo = cad.ReadOIDDefault(id);
-            VuelosModificar modificarForm = new VuelosModificar(this, vuelo);
+            VuelosModificar modificarForm = new VuelosModificar(this, vuelo.Id);
             modificarForm.Show();
         }
 
