@@ -30,14 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.negoServiciosGenNHibernateDataSet = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSet();
             this.reservaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.negoServiciosGenNHibernateDataSet = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSet();
             this.reservaTableAdapter = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSetTableAdapters.ReservaTableAdapter();
-            this.idReservaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plazasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fKidUsuarioidClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fKidVueloidVueloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addUsuario = new System.Windows.Forms.Button();
             this.updUsuario = new System.Windows.Forms.Button();
             this.delUsuario = new System.Windows.Forms.Button();
@@ -46,9 +41,14 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.idReservaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plazasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKidUsuarioidClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKidVueloidVueloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -67,50 +67,19 @@
             this.dataGridView1.Size = new System.Drawing.Size(762, 255);
             this.dataGridView1.TabIndex = 0;
             // 
-            // negoServiciosGenNHibernateDataSet
-            // 
-            this.negoServiciosGenNHibernateDataSet.DataSetName = "NegoServiciosGenNHibernateDataSet";
-            this.negoServiciosGenNHibernateDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // reservaBindingSource
             // 
             this.reservaBindingSource.DataMember = "Reserva";
             this.reservaBindingSource.DataSource = this.negoServiciosGenNHibernateDataSet;
             // 
+            // negoServiciosGenNHibernateDataSet
+            // 
+            this.negoServiciosGenNHibernateDataSet.DataSetName = "NegoServiciosGenNHibernateDataSet";
+            this.negoServiciosGenNHibernateDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // reservaTableAdapter
             // 
             this.reservaTableAdapter.ClearBeforeFill = true;
-            // 
-            // idReservaDataGridViewTextBoxColumn
-            // 
-            this.idReservaDataGridViewTextBoxColumn.DataPropertyName = "idReserva";
-            this.idReservaDataGridViewTextBoxColumn.HeaderText = "idReserva";
-            this.idReservaDataGridViewTextBoxColumn.Name = "idReservaDataGridViewTextBoxColumn";
-            this.idReservaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // plazasDataGridViewTextBoxColumn
-            // 
-            this.plazasDataGridViewTextBoxColumn.DataPropertyName = "plazas";
-            this.plazasDataGridViewTextBoxColumn.HeaderText = "plazas";
-            this.plazasDataGridViewTextBoxColumn.Name = "plazasDataGridViewTextBoxColumn";
-            // 
-            // estadoDataGridViewTextBoxColumn
-            // 
-            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
-            this.estadoDataGridViewTextBoxColumn.HeaderText = "estado";
-            this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
-            // 
-            // fKidUsuarioidClienteDataGridViewTextBoxColumn
-            // 
-            this.fKidUsuarioidClienteDataGridViewTextBoxColumn.DataPropertyName = "FK_idUsuario_idCliente";
-            this.fKidUsuarioidClienteDataGridViewTextBoxColumn.HeaderText = "FK_idUsuario_idCliente";
-            this.fKidUsuarioidClienteDataGridViewTextBoxColumn.Name = "fKidUsuarioidClienteDataGridViewTextBoxColumn";
-            // 
-            // fKidVueloidVueloDataGridViewTextBoxColumn
-            // 
-            this.fKidVueloidVueloDataGridViewTextBoxColumn.DataPropertyName = "FK_idVuelo_idVuelo";
-            this.fKidVueloidVueloDataGridViewTextBoxColumn.HeaderText = "FK_idVuelo_idVuelo";
-            this.fKidVueloidVueloDataGridViewTextBoxColumn.Name = "fKidVueloidVueloDataGridViewTextBoxColumn";
             // 
             // addUsuario
             // 
@@ -195,6 +164,42 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // idReservaDataGridViewTextBoxColumn
+            // 
+            this.idReservaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.idReservaDataGridViewTextBoxColumn.DataPropertyName = "idReserva";
+            this.idReservaDataGridViewTextBoxColumn.HeaderText = "idReserva";
+            this.idReservaDataGridViewTextBoxColumn.Name = "idReservaDataGridViewTextBoxColumn";
+            this.idReservaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // plazasDataGridViewTextBoxColumn
+            // 
+            this.plazasDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.plazasDataGridViewTextBoxColumn.DataPropertyName = "plazas";
+            this.plazasDataGridViewTextBoxColumn.HeaderText = "plazas";
+            this.plazasDataGridViewTextBoxColumn.Name = "plazasDataGridViewTextBoxColumn";
+            // 
+            // estadoDataGridViewTextBoxColumn
+            // 
+            this.estadoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
+            this.estadoDataGridViewTextBoxColumn.HeaderText = "estado";
+            this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
+            // 
+            // fKidUsuarioidClienteDataGridViewTextBoxColumn
+            // 
+            this.fKidUsuarioidClienteDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.fKidUsuarioidClienteDataGridViewTextBoxColumn.DataPropertyName = "FK_idUsuario_idCliente";
+            this.fKidUsuarioidClienteDataGridViewTextBoxColumn.HeaderText = "idCliente";
+            this.fKidUsuarioidClienteDataGridViewTextBoxColumn.Name = "fKidUsuarioidClienteDataGridViewTextBoxColumn";
+            // 
+            // fKidVueloidVueloDataGridViewTextBoxColumn
+            // 
+            this.fKidVueloidVueloDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.fKidVueloidVueloDataGridViewTextBoxColumn.DataPropertyName = "FK_idVuelo_idVuelo";
+            this.fKidVueloidVueloDataGridViewTextBoxColumn.HeaderText = "idVuelo";
+            this.fKidVueloidVueloDataGridViewTextBoxColumn.Name = "fKidVueloidVueloDataGridViewTextBoxColumn";
+            // 
             // ReservasVer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,8 +220,8 @@
             this.Text = "ReservasVer";
             this.Load += new System.EventHandler(this.ReservasVer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,11 +233,6 @@
         private NegoServiciosGenNHibernateDataSet negoServiciosGenNHibernateDataSet;
         private System.Windows.Forms.BindingSource reservaBindingSource;
         private NegoServiciosGenNHibernateDataSetTableAdapters.ReservaTableAdapter reservaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idReservaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn plazasDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fKidUsuarioidClienteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fKidVueloidVueloDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button addUsuario;
         private System.Windows.Forms.Button updUsuario;
         private System.Windows.Forms.Button delUsuario;
@@ -241,5 +241,10 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idReservaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plazasDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fKidUsuarioidClienteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fKidVueloidVueloDataGridViewTextBoxColumn;
     }
 }
