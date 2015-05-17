@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(222, 244);
+            this.ClientSize = new System.Drawing.Size(222, 240);
             this.Controls.Add(this.confirmar_button);
             this.Controls.Add(this.estado_textbox);
             this.Controls.Add(this.label2);
