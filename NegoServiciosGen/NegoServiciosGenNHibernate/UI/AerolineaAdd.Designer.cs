@@ -31,7 +31,6 @@
             this.aerolinea = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
-            this.error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // aerolinea
@@ -60,24 +59,12 @@
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
-            // error
-            // 
-            this.error.AutoSize = true;
-            this.error.BackColor = System.Drawing.SystemColors.Control;
-            this.error.ForeColor = System.Drawing.Color.Red;
-            this.error.Location = new System.Drawing.Point(137, 114);
-            this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(29, 13);
-            this.error.TabIndex = 3;
-            this.error.Text = "Error";
-            // 
             // AerolineaAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(317, 210);
-            this.Controls.Add(this.error);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aerolinea);
@@ -93,6 +80,5 @@
         private System.Windows.Forms.TextBox aerolinea;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button submit;
-        private System.Windows.Forms.Label error;
     }
 }

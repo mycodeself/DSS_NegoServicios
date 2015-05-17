@@ -157,6 +157,12 @@
     <Compile Include="UI\ClientesVer.Designer.cs">
       <DependentUpon>ClientesVer.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ReservasAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReservasAdd.Designer.cs">
+      <DependentUpon>ReservasAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\ReservasVer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainEmpleado.resx">
       <DependentUpon>MainEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReservasAdd.resx">
+      <DependentUpon>ReservasAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ReservasVer.resx">
       <DependentUpon>ReservasVer.cs</DependentUpon>

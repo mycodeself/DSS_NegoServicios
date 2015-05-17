@@ -35,7 +35,6 @@
             this.aerolineaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.negoServiciosGenNHibernateDataSet = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSet();
             this.aerolineaTableAdapter = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSetTableAdapters.AerolineaTableAdapter();
-            this.error = new System.Windows.Forms.Label();
             this.updUsuario = new System.Windows.Forms.Button();
             this.delUsuario = new System.Windows.Forms.Button();
             this.addUsuario = new System.Windows.Forms.Button();
@@ -97,16 +96,6 @@
             // aerolineaTableAdapter
             // 
             this.aerolineaTableAdapter.ClearBeforeFill = true;
-            // 
-            // error
-            // 
-            this.error.AutoSize = true;
-            this.error.ForeColor = System.Drawing.Color.Red;
-            this.error.Location = new System.Drawing.Point(337, 296);
-            this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(29, 13);
-            this.error.TabIndex = 10;
-            this.error.Text = "Error";
             // 
             // updUsuario
             // 
@@ -196,7 +185,6 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.error);
             this.Controls.Add(this.updUsuario);
             this.Controls.Add(this.delUsuario);
             this.Controls.Add(this.addUsuario);
@@ -222,7 +210,6 @@
         private NegoServiciosGenNHibernateDataSetTableAdapters.AerolineaTableAdapter aerolineaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idAerolineaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label error;
         private System.Windows.Forms.Button updUsuario;
         private System.Windows.Forms.Button delUsuario;
         private System.Windows.Forms.Button addUsuario;

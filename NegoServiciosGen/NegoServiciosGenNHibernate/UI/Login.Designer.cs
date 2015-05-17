@@ -33,7 +33,6 @@
             this.passText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.errorText = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -85,20 +84,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Contraseña";
             // 
-            // errorText
-            // 
-            this.errorText.AutoSize = true;
-            this.errorText.BackColor = System.Drawing.Color.Transparent;
-            this.errorText.ForeColor = System.Drawing.Color.Red;
-            this.errorText.Location = new System.Drawing.Point(84, 224);
-            this.errorText.MinimumSize = new System.Drawing.Size(400, 0);
-            this.errorText.Name = "errorText";
-            this.errorText.Size = new System.Drawing.Size(400, 13);
-            this.errorText.TabIndex = 5;
-            this.errorText.Text = "E";
-            this.errorText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.errorText.Visible = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -119,7 +104,6 @@
             this.BackgroundImage = global::NegoServiciosGenNHibernate.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(557, 286);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.errorText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passText);
@@ -142,7 +126,6 @@
         private System.Windows.Forms.TextBox passText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label errorText;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
