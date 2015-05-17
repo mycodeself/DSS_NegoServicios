@@ -15,9 +15,11 @@ namespace NegoServiciosGenNHibernate.UI
 {
     public partial class ReservasAdd : Form
     {
-        public ReservasAdd()
+        ReservasVer reservas_form;
+        public ReservasAdd(ReservasVer form)
         {
             InitializeComponent();
+            reservas_form = form;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -42,6 +44,7 @@ namespace NegoServiciosGenNHibernate.UI
                     if (validacion == "")
                     {
                         cen.New_(Convert.ToInt32(aux_id_cliente), Convert.ToInt32(aux_id_vuelo), Convert.ToInt32(aux_plazas), estado);
+                        reservas_form.refreshData();
                     }
                     else
                     {
@@ -50,7 +53,7 @@ namespace NegoServiciosGenNHibernate.UI
                 }
                 catch (ArgumentException ex)
                 {
-                    MessageBox.Show("Error, tipo de estado incorrecto");
+                    MessageBox.Show("Error, tipo de estado incorrecto :"+ex);
                 }
             }
             catch (NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)
@@ -75,10 +78,8 @@ namespace NegoServiciosGenNHibernate.UI
             }
             catch(NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)
             {
-                validacion = "Cliente ID y Vuelo ID incorrectos \n";
+                validacion = "Cliente ID y Vuelo ID incorrectos:"+ex + "\n";
             }
-
-
             return validacion;
         }
     }

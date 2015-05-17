@@ -28,65 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Plazas_label = new System.Windows.Forms.Label();
+            this.plazas_label = new System.Windows.Forms.Label();
+            this.estado_label = new System.Windows.Forms.Label();
             this.plazas_textbox = new System.Windows.Forms.TextBox();
-            this.Estado_label = new System.Windows.Forms.Label();
-            this.estado_textbox = new System.Windows.Forms.TextBox();
-            this.Confirmar = new System.Windows.Forms.Button();
+            this.estados_textbox = new System.Windows.Forms.TextBox();
+            this.estado_button = new System.Windows.Forms.Button();
+            this.plazas_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Plazas_label
+            // plazas_label
             // 
-            this.Plazas_label.AutoSize = true;
-            this.Plazas_label.Location = new System.Drawing.Point(57, 9);
-            this.Plazas_label.Name = "Plazas_label";
-            this.Plazas_label.Size = new System.Drawing.Size(38, 13);
-            this.Plazas_label.TabIndex = 0;
-            this.Plazas_label.Text = "Plazas";
+            this.plazas_label.AutoSize = true;
+            this.plazas_label.Location = new System.Drawing.Point(111, 9);
+            this.plazas_label.Name = "plazas_label";
+            this.plazas_label.Size = new System.Drawing.Size(38, 13);
+            this.plazas_label.TabIndex = 0;
+            this.plazas_label.Text = "Plazas";
+            // 
+            // estado_label
+            // 
+            this.estado_label.AutoSize = true;
+            this.estado_label.Location = new System.Drawing.Point(111, 75);
+            this.estado_label.Name = "estado_label";
+            this.estado_label.Size = new System.Drawing.Size(40, 13);
+            this.estado_label.TabIndex = 1;
+            this.estado_label.Text = "Estado";
             // 
             // plazas_textbox
             // 
-            this.plazas_textbox.Location = new System.Drawing.Point(37, 25);
+            this.plazas_textbox.Location = new System.Drawing.Point(76, 25);
             this.plazas_textbox.Name = "plazas_textbox";
             this.plazas_textbox.Size = new System.Drawing.Size(100, 20);
-            this.plazas_textbox.TabIndex = 1;
+            this.plazas_textbox.TabIndex = 2;
             // 
-            // Estado_label
+            // estados_textbox
             // 
-            this.Estado_label.AutoSize = true;
-            this.Estado_label.Location = new System.Drawing.Point(57, 60);
-            this.Estado_label.Name = "Estado_label";
-            this.Estado_label.Size = new System.Drawing.Size(40, 13);
-            this.Estado_label.TabIndex = 2;
-            this.Estado_label.Text = "Estado";
+            this.estados_textbox.Location = new System.Drawing.Point(76, 91);
+            this.estados_textbox.Name = "estados_textbox";
+            this.estados_textbox.Size = new System.Drawing.Size(100, 20);
+            this.estados_textbox.TabIndex = 3;
             // 
-            // estado_textbox
+            // estado_button
             // 
-            this.estado_textbox.Location = new System.Drawing.Point(37, 76);
-            this.estado_textbox.Name = "estado_textbox";
-            this.estado_textbox.Size = new System.Drawing.Size(100, 20);
-            this.estado_textbox.TabIndex = 3;
-            this.estado_textbox.TextChanged += new System.EventHandler(this.estado_textbox_TextChanged);
+            this.estado_button.Location = new System.Drawing.Point(12, 134);
+            this.estado_button.Name = "estado_button";
+            this.estado_button.Size = new System.Drawing.Size(75, 53);
+            this.estado_button.TabIndex = 5;
+            this.estado_button.Text = "Cambiar Estado";
+            this.estado_button.UseVisualStyleBackColor = true;
+            this.estado_button.Click += new System.EventHandler(this.estado_button_Click);
             // 
-            // Confirmar
+            // plazas_button
             // 
-            this.Confirmar.Location = new System.Drawing.Point(49, 111);
-            this.Confirmar.Name = "Confirmar";
-            this.Confirmar.Size = new System.Drawing.Size(75, 23);
-            this.Confirmar.TabIndex = 4;
-            this.Confirmar.Text = "Confirmar";
-            this.Confirmar.UseVisualStyleBackColor = true;
+            this.plazas_button.Location = new System.Drawing.Point(169, 134);
+            this.plazas_button.Name = "plazas_button";
+            this.plazas_button.Size = new System.Drawing.Size(75, 53);
+            this.plazas_button.TabIndex = 6;
+            this.plazas_button.Text = "Cambiar Plazas";
+            this.plazas_button.UseVisualStyleBackColor = true;
+            this.plazas_button.Click += new System.EventHandler(this.plazas_button_Click);
             // 
             // ReservasModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(189, 144);
-            this.Controls.Add(this.Confirmar);
-            this.Controls.Add(this.estado_textbox);
-            this.Controls.Add(this.Estado_label);
+            this.ClientSize = new System.Drawing.Size(256, 199);
+            this.Controls.Add(this.plazas_button);
+            this.Controls.Add(this.estado_button);
+            this.Controls.Add(this.estados_textbox);
             this.Controls.Add(this.plazas_textbox);
-            this.Controls.Add(this.Plazas_label);
+            this.Controls.Add(this.estado_label);
+            this.Controls.Add(this.plazas_label);
             this.Name = "ReservasModificar";
             this.Text = "ReservasModificar";
             this.ResumeLayout(false);
@@ -96,10 +108,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Plazas_label;
+        private System.Windows.Forms.Label plazas_label;
+        private System.Windows.Forms.Label estado_label;
         private System.Windows.Forms.TextBox plazas_textbox;
-        private System.Windows.Forms.Label Estado_label;
-        private System.Windows.Forms.TextBox estado_textbox;
-        private System.Windows.Forms.Button Confirmar;
+        private System.Windows.Forms.TextBox estados_textbox;
+        private System.Windows.Forms.Button estado_button;
+        private System.Windows.Forms.Button plazas_button;
     }
 }
