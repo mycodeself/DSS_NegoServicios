@@ -50,10 +50,9 @@ namespace NegoServiciosGenNHibernate.UI
             Regex correo= new Regex ("(@)(.+)$");
             String s = "";
 
-            if (usuario.Text == "" || password.Text == "" || email.Text == "" || dni == null)
+            if (usuario.Text == "" || password.Text == "" || email.Text == "" || dni.TextLength == 0)
             {
                 s = s + "Rellene todos los campos.";
-                return s;
             }
             else
             {
@@ -65,9 +64,12 @@ namespace NegoServiciosGenNHibernate.UI
                 {
                     s = s + "Formato de direccion de correo invalido.\n";
                 }
-
-                return s;
+                if (dni.TextLength > 9)
+                {
+                    s = s + "Formato de DNI/NIF invalido.";
+                }
             }
+            return s;
                 
         }
 

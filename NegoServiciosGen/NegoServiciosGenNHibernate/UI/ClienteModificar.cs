@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using NegoServiciosGenNHibernate.EN.NegoServicios;
 using NegoServiciosGenNHibernate.CEN.NegoServicios;
 using NegoServiciosGenNHibernate.CAD.NegoServicios;
+using System.Text.RegularExpressions;
 
 namespace NegoServiciosGenNHibernate.UI
 {
@@ -33,14 +34,51 @@ namespace NegoServiciosGenNHibernate.UI
 
         private void submit_Click(object sender, EventArgs e)
         {
-            cliente.Usuario = this.usuario.Text;
-            cliente.Password = this.password.Text;
-            cliente.Email = this.email.Text;
-            cliente.DNI = this.dni.Text;
-            ClienteCAD cad = new ClienteCAD();
-            cad.Modify(cliente);
-            clientesVerForm.refreshData();
+            String errores = compruebaDatos();
+            if (errores == "")
+            {
+                cliente.Usuario = this.usuario.Text;
+                cliente.Password = this.password.Text;
+                cliente.Email = this.email.Text;
+                cliente.DNI = this.dni.Text;
+                ClienteCAD cad = new ClienteCAD();
+                cad.Modify(cliente);
+                clientesVerForm.refreshData();
+            }
+            else
+            {
+                MessageBox.Show(errores);
+            }
+
             this.Close();
+        }
+        private String compruebaDatos()
+        {
+            Regex nomb = new Regex("^[a-zA-Z0-9]");
+            Regex correo = new Regex("(@)(.+)$");
+            String s = "";
+
+            if (usuario.Text == "" || password.Text == "" || email.Text == "" || dni.TextLength == 0)
+            {
+                s = s + "Rellene todos los campos.";
+            }
+            else
+            {
+                if (!nomb.IsMatch(usuario.Text))
+                {
+                    s = s + "Nombre de Usuario incorrecto. Utilice solo carácteres alfanuméricos.\n";
+                }
+                if (!correo.IsMatch(email.Text))
+                {
+                    s = s + "Formato de direccion de correo invalido.\n";
+                }
+                if (dni.TextLength > 9)
+                {
+                    s = s + "Formato de DNI/NIF invalido.";
+                }
+            }
+            return s;
+
         }
     }
 }
