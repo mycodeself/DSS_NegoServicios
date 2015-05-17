@@ -32,7 +32,8 @@ namespace NegoServiciosGenNHibernate.UI
         }
         private void addUsuario_Click(object sender, EventArgs e)
         {
-
+            ReservasAdd addForm = new ReservasAdd(this);
+            addForm.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,6 +66,24 @@ namespace NegoServiciosGenNHibernate.UI
                 bs.Filter = comboBox1.SelectedItem.ToString() + " = null";
                 dataGridView1.DataSource = bs;
             }
+        }
+
+        private void updUsuario_Click(object sender, EventArgs e)
+        {
+            int id = ((int)((DataRowView)this.reservaBindingSource.Current).Row["idReserva"]);
+            ReservaCAD cad = new ReservaCAD();
+            ReservaEN reserva = cad.ReadOIDDefault(id);
+            ReservasModificar modificarForm = new ReservasModificar(this, reserva);
+            modificarForm.Show();
+        }
+
+        private void delUsuario_Click(object sender, EventArgs e)
+        {
+            int id = ((int)((DataRowView)this.reservaBindingSource.Current).Row["idReserva"]);
+            ReservaCEN resCEN = new ReservaCEN();
+            resCEN.Destroy(id);
+            MessageBox.Show("id seleccionado: " + ((DataRowView)this.reservaBindingSource.Current).Row["idReserva"]);
+            this.reservaTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Reserva);
         }
     }
 }

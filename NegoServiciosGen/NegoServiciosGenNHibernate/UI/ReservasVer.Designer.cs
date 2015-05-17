@@ -138,6 +138,7 @@
             this.updUsuario.TabIndex = 6;
             this.updUsuario.Text = "Modificar usuario";
             this.updUsuario.UseVisualStyleBackColor = false;
+            this.updUsuario.Click += new System.EventHandler(this.updUsuario_Click);
             // 
             // delUsuario
             // 
@@ -149,6 +150,7 @@
             this.delUsuario.TabIndex = 7;
             this.delUsuario.Text = "Eliminar usuario";
             this.delUsuario.UseVisualStyleBackColor = false;
+            this.delUsuario.Click += new System.EventHandler(this.delUsuario_Click);
             // 
             // label1
             // 
