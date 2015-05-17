@@ -44,8 +44,16 @@ namespace NegoServiciosGenNHibernate.UI
                     VueloCEN cen = new VueloCEN();
                     AerolineaCAD aux = new AerolineaCAD();
                     AerolineaEN aero = aux.ReadByNombre(Aerolinea_tb.Text);
-                    cen.New_(aero.Id, Origen_tb.Text, Destino_tb.Text, Fsalida_date.Value, Fllegada_date.Value, Hsalida_date.Value, Hllegada_date.Value, Convert.ToInt32(Plazas_tb.Text), Convert.ToInt32(Precio_tb.Text));
-                    vuelos.refreshData();
+                    try
+                    {
+                        cen.New_(aero.Id, Origen_tb.Text, Destino_tb.Text, Fsalida_date.Value, Fllegada_date.Value, Hsalida_date.Value, Hllegada_date.Value, Convert.ToInt32(Plazas_tb.Text), Convert.ToInt32(Precio_tb.Text));
+                        vuelos.refreshData();
+                    }
+                    catch (FormatException ex)
+                    {
+                        errores = errores + " Las plazas y el precio solo pueden ser carácteres numéricos (0-9).";
+                        MessageBox.Show(errores);
+                    }
                     this.Close();
                 }
                 else
@@ -65,7 +73,7 @@ namespace NegoServiciosGenNHibernate.UI
         }
         private String compruebaDatos()
         {
-            Regex numeros=new Regex("^[0-9]+$");
+            Regex numeros=new Regex("^[0-9]");
             AerolineaCAD aerolineas = new AerolineaCAD();
             String s = "";
 
@@ -88,7 +96,7 @@ namespace NegoServiciosGenNHibernate.UI
                 {
                     s = s + "No se encuentra la aerolinea indicada.\n";
                 }
-                if (!numeros.IsMatch(Plazas_tb.Text) && Convert.ToInt32(Plazas_tb.Text)>0)
+                if (!numeros.IsMatch(Plazas_tb.Text) && Convert.ToInt32(Plazas_tb.Text) > 0)
                 {
                     s = s + "Las plazas deben ser un número mayor que 0.\n";
                 }
@@ -96,10 +104,14 @@ namespace NegoServiciosGenNHibernate.UI
                 {
                     s = s + "El precio debe ser un numero mayor que 0.";
                 }
-
             }
 
             return s;
+        }
+
+        private void VuelosAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
