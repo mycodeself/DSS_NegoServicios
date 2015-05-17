@@ -24,7 +24,6 @@ namespace NegoServiciosGenNHibernate.UI
         {
             // TODO: esta línea de código carga datos en la tabla 'negoServiciosGenNHibernateDataSet.Cliente' Puede moverla o quitarla según sea necesario.
             this.clienteTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Cliente);
-
             this.refreshData();
             comboBox1.SelectedIndex = 0;
         }
