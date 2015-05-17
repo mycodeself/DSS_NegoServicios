@@ -79,6 +79,7 @@ namespace NegoServiciosGenNHibernate.UI
                 {
                     vuelo.Plazas = vuelo.Plazas - Convert.ToInt32(plazas);
                     cad_vuelo.Modify(vuelo);
+                    this.Close();
                 }
             }
             catch(NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)

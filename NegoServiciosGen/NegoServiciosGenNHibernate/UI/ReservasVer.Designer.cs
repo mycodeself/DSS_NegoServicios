@@ -122,9 +122,9 @@
             this.addUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.addUsuario.Location = new System.Drawing.Point(12, 269);
             this.addUsuario.Name = "addUsuario";
-            this.addUsuario.Size = new System.Drawing.Size(84, 38);
+            this.addUsuario.Size = new System.Drawing.Size(85, 38);
             this.addUsuario.TabIndex = 4;
-            this.addUsuario.Text = "Añadir usuario";
+            this.addUsuario.Text = "Añadir reserva";
             this.addUsuario.UseVisualStyleBackColor = false;
             this.addUsuario.Click += new System.EventHandler(this.addUsuario_Click);
             // 
@@ -134,9 +134,9 @@
             this.updUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.updUsuario.Location = new System.Drawing.Point(102, 269);
             this.updUsuario.Name = "updUsuario";
-            this.updUsuario.Size = new System.Drawing.Size(97, 38);
+            this.updUsuario.Size = new System.Drawing.Size(98, 38);
             this.updUsuario.TabIndex = 6;
-            this.updUsuario.Text = "Modificar usuario";
+            this.updUsuario.Text = "Modificar reserva";
             this.updUsuario.UseVisualStyleBackColor = false;
             this.updUsuario.Click += new System.EventHandler(this.updUsuario_Click);
             // 
@@ -146,9 +146,9 @@
             this.delUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.delUsuario.Location = new System.Drawing.Point(205, 269);
             this.delUsuario.Name = "delUsuario";
-            this.delUsuario.Size = new System.Drawing.Size(90, 38);
+            this.delUsuario.Size = new System.Drawing.Size(91, 38);
             this.delUsuario.TabIndex = 7;
-            this.delUsuario.Text = "Eliminar usuario";
+            this.delUsuario.Text = "Eliminar reserva";
             this.delUsuario.UseVisualStyleBackColor = false;
             this.delUsuario.Click += new System.EventHandler(this.delUsuario_Click);
             // 

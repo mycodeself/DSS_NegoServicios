@@ -72,5 +72,23 @@ namespace NegoServiciosGenNHibernate.UI
             VuelosAdd vAdd = new VuelosAdd(this);
             vAdd.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int id = ((int)((DataRowView)this.vueloBindingSource.Current).Row["idVuelo"]);
+            VueloCAD cad = new VueloCAD();
+            VueloEN vuelo = cad.ReadOIDDefault(id);
+            VuelosModificar modificarForm = new VuelosModificar(this, vuelo);
+            modificarForm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int id = ((int)((DataRowView)this.vueloBindingSource.Current).Row["idVuelo"]);
+            ReservaCEN resCEN = new ReservaCEN();
+            resCEN.Destroy(id);
+            MessageBox.Show("id seleccionado: " + ((DataRowView)this.vueloBindingSource.Current).Row["idVuelo"]);
+            this.vueloTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Vuelo);
+        }
     }
 }
