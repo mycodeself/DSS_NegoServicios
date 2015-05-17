@@ -44,6 +44,7 @@ namespace NegoServiciosGenNHibernate.UI
                     if (validacion == "")
                     {
                         cen.New_(Convert.ToInt32(aux_id_cliente), Convert.ToInt32(aux_id_vuelo), Convert.ToInt32(aux_plazas), estado);
+                        cen.
                         reservas_form.refreshData();
                     }
                     else
@@ -74,6 +75,10 @@ namespace NegoServiciosGenNHibernate.UI
                 if (Convert.ToInt32(plazas) > vuelo.Plazas)
                 {
                     validacion = "Número de plazas a reservar incorrecto";
+                }
+                else
+                {
+                    vuelo.
                 }
             }
             catch(NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)

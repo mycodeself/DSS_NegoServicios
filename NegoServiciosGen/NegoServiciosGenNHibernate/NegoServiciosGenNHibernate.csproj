@@ -193,6 +193,12 @@
     <Compile Include="UI\VuelosAdd.Designer.cs">
       <DependentUpon>VuelosAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\VuelosModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VuelosModificar.Designer.cs">
+      <DependentUpon>VuelosModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\VuelosVer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\VuelosAdd.resx">
       <DependentUpon>VuelosAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VuelosModificar.resx">
+      <DependentUpon>VuelosModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\VuelosVer.resx">
       <DependentUpon>VuelosVer.cs</DependentUpon>

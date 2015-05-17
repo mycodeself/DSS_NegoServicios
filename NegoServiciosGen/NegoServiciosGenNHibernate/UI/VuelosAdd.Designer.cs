@@ -52,7 +52,7 @@
             // Fsalida_label
             // 
             this.Fsalida_label.AutoSize = true;
-            this.Fsalida_label.Location = new System.Drawing.Point(12, 92);
+            this.Fsalida_label.Location = new System.Drawing.Point(3, 92);
             this.Fsalida_label.Name = "Fsalida_label";
             this.Fsalida_label.Size = new System.Drawing.Size(69, 13);
             this.Fsalida_label.TabIndex = 0;
@@ -61,7 +61,7 @@
             // Llegada_Label
             // 
             this.Llegada_Label.AutoSize = true;
-            this.Llegada_Label.Location = new System.Drawing.Point(12, 131);
+            this.Llegada_Label.Location = new System.Drawing.Point(3, 131);
             this.Llegada_Label.Name = "Llegada_Label";
             this.Llegada_Label.Size = new System.Drawing.Size(78, 13);
             this.Llegada_Label.TabIndex = 1;
@@ -70,7 +70,7 @@
             // Origen_label
             // 
             this.Origen_label.AutoSize = true;
-            this.Origen_label.Location = new System.Drawing.Point(25, 14);
+            this.Origen_label.Location = new System.Drawing.Point(4, 21);
             this.Origen_label.Name = "Origen_label";
             this.Origen_label.Size = new System.Drawing.Size(38, 13);
             this.Origen_label.TabIndex = 2;
@@ -79,7 +79,7 @@
             // Destino_label
             // 
             this.Destino_label.AutoSize = true;
-            this.Destino_label.Location = new System.Drawing.Point(12, 53);
+            this.Destino_label.Location = new System.Drawing.Point(4, 60);
             this.Destino_label.Name = "Destino_label";
             this.Destino_label.Size = new System.Drawing.Size(43, 13);
             this.Destino_label.TabIndex = 3;
@@ -88,7 +88,7 @@
             // Hsalida_label
             // 
             this.Hsalida_label.AutoSize = true;
-            this.Hsalida_label.Location = new System.Drawing.Point(12, 170);
+            this.Hsalida_label.Location = new System.Drawing.Point(3, 169);
             this.Hsalida_label.Name = "Hsalida_label";
             this.Hsalida_label.Size = new System.Drawing.Size(60, 13);
             this.Hsalida_label.TabIndex = 4;
@@ -97,7 +97,7 @@
             // Hllegada_label
             // 
             this.Hllegada_label.AutoSize = true;
-            this.Hllegada_label.Location = new System.Drawing.Point(12, 209);
+            this.Hllegada_label.Location = new System.Drawing.Point(3, 209);
             this.Hllegada_label.Name = "Hllegada_label";
             this.Hllegada_label.Size = new System.Drawing.Size(71, 13);
             this.Hllegada_label.TabIndex = 5;
@@ -106,7 +106,7 @@
             // Fsalida_date
             // 
             this.Fsalida_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Fsalida_date.Location = new System.Drawing.Point(15, 108);
+            this.Fsalida_date.Location = new System.Drawing.Point(90, 92);
             this.Fsalida_date.Name = "Fsalida_date";
             this.Fsalida_date.Size = new System.Drawing.Size(200, 20);
             this.Fsalida_date.TabIndex = 6;
@@ -114,7 +114,7 @@
             // Fllegada_date
             // 
             this.Fllegada_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Fllegada_date.Location = new System.Drawing.Point(15, 147);
+            this.Fllegada_date.Location = new System.Drawing.Point(90, 125);
             this.Fllegada_date.Name = "Fllegada_date";
             this.Fllegada_date.Size = new System.Drawing.Size(200, 20);
             this.Fllegada_date.TabIndex = 7;
@@ -122,7 +122,7 @@
             // Hsalida_date
             // 
             this.Hsalida_date.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.Hsalida_date.Location = new System.Drawing.Point(15, 186);
+            this.Hsalida_date.Location = new System.Drawing.Point(90, 163);
             this.Hsalida_date.Name = "Hsalida_date";
             this.Hsalida_date.Size = new System.Drawing.Size(200, 20);
             this.Hsalida_date.TabIndex = 8;
@@ -131,7 +131,7 @@
             // Hllegada_date
             // 
             this.Hllegada_date.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.Hllegada_date.Location = new System.Drawing.Point(12, 225);
+            this.Hllegada_date.Location = new System.Drawing.Point(90, 202);
             this.Hllegada_date.Name = "Hllegada_date";
             this.Hllegada_date.Size = new System.Drawing.Size(200, 20);
             this.Hllegada_date.TabIndex = 9;
@@ -139,32 +139,32 @@
             // 
             // Origen_tb
             // 
-            this.Origen_tb.Location = new System.Drawing.Point(26, 30);
+            this.Origen_tb.Location = new System.Drawing.Point(90, 14);
             this.Origen_tb.Name = "Origen_tb";
             this.Origen_tb.Size = new System.Drawing.Size(100, 20);
             this.Origen_tb.TabIndex = 10;
             // 
             // Destino_tb
             // 
-            this.Destino_tb.Location = new System.Drawing.Point(26, 69);
+            this.Destino_tb.Location = new System.Drawing.Point(90, 53);
             this.Destino_tb.Name = "Destino_tb";
             this.Destino_tb.Size = new System.Drawing.Size(100, 20);
             this.Destino_tb.TabIndex = 11;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(197, 41);
+            this.button1.Location = new System.Drawing.Point(7, 363);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
+            this.button1.Text = "Confirmar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 258);
+            this.label1.Location = new System.Drawing.Point(3, 246);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 13;
@@ -172,7 +172,7 @@
             // 
             // Aerolinea_tb
             // 
-            this.Aerolinea_tb.Location = new System.Drawing.Point(15, 274);
+            this.Aerolinea_tb.Location = new System.Drawing.Point(90, 239);
             this.Aerolinea_tb.Name = "Aerolinea_tb";
             this.Aerolinea_tb.Size = new System.Drawing.Size(100, 20);
             this.Aerolinea_tb.TabIndex = 14;
@@ -180,7 +180,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 350);
+            this.label2.Location = new System.Drawing.Point(3, 317);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 15;
@@ -189,7 +189,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 308);
+            this.label3.Location = new System.Drawing.Point(3, 281);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 16;
@@ -197,14 +197,14 @@
             // 
             // Precio_tb
             // 
-            this.Precio_tb.Location = new System.Drawing.Point(15, 366);
+            this.Precio_tb.Location = new System.Drawing.Point(90, 310);
             this.Precio_tb.Name = "Precio_tb";
             this.Precio_tb.Size = new System.Drawing.Size(100, 20);
             this.Precio_tb.TabIndex = 17;
             // 
             // Plazas_tb
             // 
-            this.Plazas_tb.Location = new System.Drawing.Point(15, 324);
+            this.Plazas_tb.Location = new System.Drawing.Point(90, 274);
             this.Plazas_tb.Name = "Plazas_tb";
             this.Plazas_tb.Size = new System.Drawing.Size(100, 20);
             this.Plazas_tb.TabIndex = 18;
