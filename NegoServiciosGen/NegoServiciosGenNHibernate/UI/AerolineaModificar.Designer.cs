@@ -28,24 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.error = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.aerolinea = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // error
-            // 
-            this.error.AutoSize = true;
-            this.error.BackColor = System.Drawing.SystemColors.Control;
-            this.error.ForeColor = System.Drawing.Color.Red;
-            this.error.Location = new System.Drawing.Point(125, 133);
-            this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(29, 13);
-            this.error.TabIndex = 7;
-            this.error.Text = "Error";
-            this.error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.error.Click += new System.EventHandler(this.error_Click);
             // 
             // submit
             // 
@@ -79,7 +65,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(284, 212);
-            this.Controls.Add(this.error);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aerolinea);
@@ -93,7 +78,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label error;
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox aerolinea;

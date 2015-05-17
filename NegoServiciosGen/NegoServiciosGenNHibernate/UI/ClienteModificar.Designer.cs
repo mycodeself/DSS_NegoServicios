@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.error = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,17 +38,6 @@
             this.email = new System.Windows.Forms.TextBox();
             this.usuario = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // error
-            // 
-            this.error.AutoSize = true;
-            this.error.ForeColor = System.Drawing.Color.Red;
-            this.error.Location = new System.Drawing.Point(125, 187);
-            this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(29, 13);
-            this.error.TabIndex = 19;
-            this.error.Text = "Error";
-            this.error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -131,7 +119,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.error);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -152,7 +139,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label error;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

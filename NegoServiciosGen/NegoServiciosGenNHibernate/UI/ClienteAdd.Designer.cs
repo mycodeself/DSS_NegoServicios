@@ -37,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // usuario
@@ -114,25 +113,12 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "DNI/CIF";
             // 
-            // error
-            // 
-            this.error.AutoSize = true;
-            this.error.ForeColor = System.Drawing.Color.Red;
-            this.error.Location = new System.Drawing.Point(172, 187);
-            this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(29, 13);
-            this.error.TabIndex = 9;
-            this.error.Text = "Error";
-            this.error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.error.Visible = false;
-            // 
             // ClienteAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(384, 261);
-            this.Controls.Add(this.error);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -161,6 +147,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label error;
     }
 }
