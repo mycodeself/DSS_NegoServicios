@@ -41,7 +41,6 @@
             this.addUsuario = new System.Windows.Forms.Button();
             this.delUsuario = new System.Windows.Forms.Button();
             this.updUsuario = new System.Windows.Forms.Button();
-            this.error = new System.Windows.Forms.Label();
             this.clienteTableAdapter = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSetTableAdapters.ClienteTableAdapter();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -162,16 +161,6 @@
             this.updUsuario.UseVisualStyleBackColor = false;
             this.updUsuario.Click += new System.EventHandler(this.updUsuario_Click);
             // 
-            // error
-            // 
-            this.error.AutoSize = true;
-            this.error.ForeColor = System.Drawing.Color.Red;
-            this.error.Location = new System.Drawing.Point(302, 294);
-            this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(29, 13);
-            this.error.TabIndex = 6;
-            this.error.Text = "Error";
-            // 
             // clienteTableAdapter
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
@@ -231,7 +220,6 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.error);
             this.Controls.Add(this.updUsuario);
             this.Controls.Add(this.delUsuario);
             this.Controls.Add(this.addUsuario);
@@ -258,7 +246,6 @@
         private System.Windows.Forms.Button addUsuario;
         private System.Windows.Forms.Button delUsuario;
         private System.Windows.Forms.Button updUsuario;
-        private System.Windows.Forms.Label error;
         private NegoServiciosGenNHibernateDataSet negoServiciosGenNHibernateDataSet;
         private System.Windows.Forms.BindingSource clienteBindingSource;
         private NegoServiciosGenNHibernateDataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
