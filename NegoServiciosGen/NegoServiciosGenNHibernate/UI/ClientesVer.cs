@@ -43,7 +43,7 @@ namespace NegoServiciosGenNHibernate.UI
             int id = ((int)((DataRowView)this.clienteBindingSource.Current).Row["idUsuario"]);
             ClienteCEN cliCEN = new ClienteCEN();
             cliCEN.Destroy(id);
-            this.error.Text = "id seleccionado: "+((DataRowView)this.clienteBindingSource.Current).Row["idUsuario"];
+            MessageBox.Show("id seleccionado: " + ((DataRowView)this.clienteBindingSource.Current).Row["idUsuario"]);
             this.clienteTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Cliente);
         }
         public void refreshData()
@@ -98,6 +98,5 @@ namespace NegoServiciosGenNHibernate.UI
         {
 
         }
-
     }
 }

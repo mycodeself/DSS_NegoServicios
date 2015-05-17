@@ -35,13 +35,12 @@ namespace NegoServiciosGenNHibernate.UI
                 else
                 {
                     MessageBox.Show(errores);
-
                 }
 
             }
             catch(NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)
             {
-                this.error.Text = ex.Message;
+                MessageBox.Show(ex.Message);
             }
         }
         private String compruebaDatos()

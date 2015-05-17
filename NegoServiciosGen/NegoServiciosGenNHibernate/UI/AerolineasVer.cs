@@ -43,7 +43,7 @@ namespace NegoServiciosGenNHibernate.UI
             int id = ((int)((DataRowView)this.aerolineaBindingSource.Current).Row["idAerolinea"]);
             AerolineaCEN aeroCEN = new AerolineaCEN();
             aeroCEN.Destroy(id);
-            this.error.Text = "id seleccionado: " + ((DataRowView)this.aerolineaBindingSource.Current).Row["idAerolinea"];
+            MessageBox.Show("Usuario Borrado");
             this.aerolineaTableAdapter.Fill(this.negoServiciosGenNHibernateDataSet.Aerolinea);
         }
 

@@ -29,7 +29,7 @@ namespace NegoServiciosGenNHibernate.UI
             }
             catch (NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)
             {
-                this.error.Text = ex.Message;
+                MessageBox.Show(ex.Message);
             }
         }
     }

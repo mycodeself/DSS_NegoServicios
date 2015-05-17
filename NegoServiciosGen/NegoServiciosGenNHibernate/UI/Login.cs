@@ -22,8 +22,6 @@ namespace NegoServiciosGenNHibernate.UI
         {
             string user = userText.Text;
             string pass = passText.Text;
-            errorText.Text = "";
-            errorText.Visible = true;
             UsuarioCEN usuarioCEN = new UsuarioCEN();
             if (validateLogin(user, pass))
             {
@@ -38,7 +36,7 @@ namespace NegoServiciosGenNHibernate.UI
                 }
                 else
                 {
-                    errorText.Text += "Usuario y/o contraseña incorrectos";
+                    MessageBox.Show("Usuario y/o contraseña incorrectos");
                 }
             }
         }
@@ -47,7 +45,7 @@ namespace NegoServiciosGenNHibernate.UI
         {
             if (user.Equals("") || pass.Equals(""))
             {
-                errorText.Text = "Debe introducir un usuario y una contraseña";
+                MessageBox.Show("Debe introducir un usuario y una contraseña");
                 return false;
             }
             return true;

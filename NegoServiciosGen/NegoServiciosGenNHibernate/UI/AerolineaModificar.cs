@@ -38,7 +38,7 @@ namespace NegoServiciosGenNHibernate.UI
             }
             else
             {
-                this.error.Text = "El nombre de la aerolinea no puede estar vacío";
+                MessageBox.Show("El nombre de la aerolinea no puede estar vacio");
             }
         }
 
