@@ -38,7 +38,7 @@ namespace NegoServiciosGenNHibernate.UI
             }
             catch (NegoServiciosGenNHibernate.Exceptions.DataLayerException ex)
             {
-                //TODO
+                MessageBox.Show(ex.Message);
             }
         }
     }
