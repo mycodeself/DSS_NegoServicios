@@ -73,7 +73,7 @@ namespace NegoServiciosGenNHibernate.UI
             int id = ((int)((DataRowView)this.reservaBindingSource.Current).Row["idReserva"]);
             ReservaCAD cad = new ReservaCAD();
             ReservaEN reserva = cad.ReadOIDDefault(id);
-            ReservasModificar modificarForm = new ReservasModificar(this, reserva);
+            ReservasModificar modificarForm = new ReservasModificar(this, reserva.Id);
             modificarForm.Show();
         }
 

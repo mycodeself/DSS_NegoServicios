@@ -16,11 +16,12 @@ namespace NegoServiciosGenNHibernate.UI
     {
         ReservasVer reserva_form;
         ReservaEN reserva;
-        public ReservasModificar(ReservasVer form,ReservaEN reserva_en)
+        public ReservasModificar(ReservasVer form,int reserva_id)
         {
             InitializeComponent();
             reserva_form = form;
-            reserva = reserva_en;
+            ReservaCAD cad = new ReservaCAD();
+            reserva = cad.ReadOID(reserva_id);
         }
 
         private void estado_button_Click(object sender, EventArgs e)
@@ -43,8 +44,9 @@ namespace NegoServiciosGenNHibernate.UI
         private void plazas_button_Click(object sender, EventArgs e)
         {
             int plazas = Convert.ToInt32(plazas_textbox.Text);
+            int p_totales = reserva.Plazas;
 
-            if (plazas > reserva.Vuelo.Plazas)
+            if (p_totales<plazas)
             {
                 MessageBox.Show("Error, número de plazas incorrecto");
             }
