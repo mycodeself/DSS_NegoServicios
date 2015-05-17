@@ -151,6 +151,7 @@
             this.salida_textbox.Name = "salida_textbox";
             this.salida_textbox.Size = new System.Drawing.Size(200, 20);
             this.salida_textbox.TabIndex = 13;
+            this.salida_textbox.ValueChanged += new System.EventHandler(this.salida_textbox_ValueChanged);
             // 
             // llegada_textbox
             // 

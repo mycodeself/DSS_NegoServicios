@@ -75,11 +75,10 @@ namespace NegoServiciosGenNHibernate.UI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int id = ((int)((DataRowView)this.vueloBindingSource.Current).Row["idVuelo"]);
-            int id_aerolinea = ((int)((DataRowView)this.vueloBindingSource.Current).Row["idAerolinea"]);
+            int id = ((int)((DataRowView)this.vueloBindingSource.Current).Row["idVuelo"]); 
             VueloCAD cad = new VueloCAD();
             VueloEN vuelo = cad.ReadOIDDefault(id);
-            VuelosModificar modificarForm = new VuelosModificar(this, vuelo.Id,id_aerolinea);
+            VuelosModificar modificarForm = new VuelosModificar(this, vuelo.Id);
             modificarForm.Show();
         }
 

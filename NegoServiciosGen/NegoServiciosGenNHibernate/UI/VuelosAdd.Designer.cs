@@ -235,6 +235,7 @@
             this.Controls.Add(this.Fsalida_label);
             this.Name = "VuelosAdd";
             this.Text = "Añadir Vuelo";
+            this.Load += new System.EventHandler(this.VuelosAdd_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

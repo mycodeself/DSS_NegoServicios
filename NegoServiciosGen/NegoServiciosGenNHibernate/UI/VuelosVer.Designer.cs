@@ -49,7 +49,7 @@
             this.horallegadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plazasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioplazaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idAerolinea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueloBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).BeginInit();
@@ -70,7 +70,7 @@
             this.horallegadaDataGridViewTextBoxColumn,
             this.plazasDataGridViewTextBoxColumn,
             this.precioplazaDataGridViewTextBoxColumn,
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn});
+            this.idAerolinea});
             this.dataGridView1.DataSource = this.vueloBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(-2, 0);
             this.dataGridView1.Name = "dataGridView1";
@@ -225,11 +225,11 @@
             this.precioplazaDataGridViewTextBoxColumn.HeaderText = "precio_plaza";
             this.precioplazaDataGridViewTextBoxColumn.Name = "precioplazaDataGridViewTextBoxColumn";
             // 
-            // fKidAerolineaidAerolineaDataGridViewTextBoxColumn
+            // idAerolinea
             // 
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.DataPropertyName = "idAerolinea";
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.HeaderText = "idAerolinea";
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.Name = "fKidAerolineaidAerolineaDataGridViewTextBoxColumn";
+            this.idAerolinea.DataPropertyName = "idAerolinea";
+            this.idAerolinea.HeaderText = "idAerolinea";
+            this.idAerolinea.Name = "idAerolinea";
             // 
             // VuelosVer
             // 
@@ -271,6 +271,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fKidAerolineaidAerolineaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idVueloDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn origenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn destinoDataGridViewTextBoxColumn;
@@ -280,6 +281,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn horallegadaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn plazasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioplazaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fKidAerolineaidAerolineaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idAerolinea;
     }
 }

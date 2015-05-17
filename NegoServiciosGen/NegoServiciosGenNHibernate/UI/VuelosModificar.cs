@@ -17,23 +17,12 @@ namespace NegoServiciosGenNHibernate.UI
     {
         VuelosVer form;
         VueloEN vuelo;
-        public VuelosModificar(VuelosVer f,int id_vuelo,int id_aerolinea)
+        public VuelosModificar(VuelosVer f,int id_vuelo)
         {
             InitializeComponent();
             form = f;
             VueloCAD cad = new VueloCAD();
-            AerolineaCAD cad_aerolinea = new AerolineaCAD();
             vuelo = cad.ReadOID(id_vuelo);
-            vuelo.Aerolinea = cad_aerolinea.ReadOID(id_aerolinea);
-            origen_textbox.Text = vuelo.Origen;
-            destino_textbox.Text = vuelo.Destino;
-            salida_textbox.Value = vuelo.Fecha_salida.Value;
-            llegada_textbox.Value = vuelo.Fecha_llegada.Value;
-            hsalida_textbox.Value = vuelo.Hora_salida.Value;
-            hllegada_textbox.Value = vuelo.Hora_llegada.Value;
-            aerolinea_textbox.Text = vuelo.Aerolinea.Nombre;
-            plazas_textbox.Text = Convert.ToString(vuelo.Plazas);
-            precio_textbox.Text = Convert.ToString(vuelo.Precio_plaza);
         }
 
         private void VuelosModificar_Load(object sender, EventArgs e)
@@ -51,7 +40,7 @@ namespace NegoServiciosGenNHibernate.UI
                     VueloCEN cen = new VueloCEN();
                     AerolineaCAD aux = new AerolineaCAD();
                     AerolineaEN aero = aux.ReadByNombre(aerolinea_textbox.Text);
-                    cen.Modify(aero.Id, origen_textbox.Text, destino_textbox.Text, salida_textbox.Value, llegada_textbox.Value, hsalida_textbox.Value, hllegada_textbox.Value, Convert.ToInt32(plazas_textbox.Text), Convert.ToInt32(precio_textbox.Text));
+                    cen.Modify(1, origen_textbox.Text, destino_textbox.Text, salida_textbox.Value, llegada_textbox.Value, hsalida_textbox.Value, hllegada_textbox.Value, Convert.ToInt32(plazas_textbox.Text), Convert.ToInt32(precio_textbox.Text));
                     form.refreshData();
                     this.Close();
                 }
@@ -71,14 +60,6 @@ namespace NegoServiciosGenNHibernate.UI
             Regex numeros = new Regex("^[0-9]+$");
             AerolineaCAD aerolineas = new AerolineaCAD();
             String s = "";
-
-
-            if (origen_textbox.Text == "" || destino_textbox.Text == "")
-            {
-                s = s + "Debe rellenar origen y destino.";
-            }
-            else
-            {
                 if (salida_textbox.Value > llegada_textbox.Value)
                 {
                     s = s + "La fecha de salida no puede ser posterior a la de llegada.\n";
@@ -91,17 +72,27 @@ namespace NegoServiciosGenNHibernate.UI
                 {
                     s = s + "No se encuentra la aerolinea indicada.\n";
                 }
-                if (!numeros.IsMatch(plazas_textbox.Text) && Convert.ToInt32(plazas_textbox.Text) > 0)
+                if (plazas_textbox.Text != "")
                 {
-                    s = s + "Las plazas deben ser un número mayor que 0.\n";
+                    if (!numeros.IsMatch(plazas_textbox.Text) && Convert.ToInt32(plazas_textbox.Text) > 0)
+                    {
+                        s = s + "Las plazas deben ser un número mayor que 0.\n";
+                    }
                 }
-                if (!numeros.IsMatch(precio_textbox.Text) && Convert.ToInt32(precio_textbox.Text) > 0)
+                if (precio_textbox.Text != "")
                 {
-                    s = s + "El precio debe ser un numero mayor que 0.";
+                    if (!numeros.IsMatch(precio_textbox.Text) && Convert.ToInt32(precio_textbox.Text) > 0)
+                    {
+                        s = s + "El precio debe ser un numero mayor que 0.";
+                    }
                 }
+                return s;
+            
+        }
 
-            }
-            return s;
+        private void salida_textbox_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

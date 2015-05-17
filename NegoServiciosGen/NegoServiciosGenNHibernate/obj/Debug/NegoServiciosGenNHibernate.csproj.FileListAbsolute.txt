@@ -217,3 +217,4 @@ D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasVer.resources
 D:\github-rep\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.VuelosVer.resources
 C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.ReservasModificar.resources
+C:\Users\Carlos\Documents\DSS_NegoServicios\NegoServiciosGen\NegoServiciosGenNHibernate\obj\Debug\NegoServiciosGenNHibernate.UI.VuelosModificar.resources
