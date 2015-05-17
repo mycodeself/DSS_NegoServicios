@@ -163,6 +163,12 @@
     <Compile Include="UI\ReservasAdd.Designer.cs">
       <DependentUpon>ReservasAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ReservasModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReservasModificar.Designer.cs">
+      <DependentUpon>ReservasModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\ReservasVer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,7 +197,7 @@
     <Compile Include="NHibernateHelper.cs" />
     <Compile Include="Exceptions\ModelException.cs" />
     <Compile Include="Exceptions\DataLayerException.cs" />
-    <Compile Include="CAD\BasicCAD.cs" />
+    <Compile Include="Enumerated\BasicCAD.cs" />
     <Compile Include="EN\NegoServicios\UsuarioEN.cs" />
     <Compile Include="CEN\NegoServicios\UsuarioCEN.cs" />
     <Compile Include="CAD\NegoServicios\IUsuarioCAD.cs" />
@@ -264,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ReservasAdd.resx">
       <DependentUpon>ReservasAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReservasModificar.resx">
+      <DependentUpon>ReservasModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ReservasVer.resx">
       <DependentUpon>ReservasVer.cs</DependentUpon>
