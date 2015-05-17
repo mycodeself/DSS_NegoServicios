@@ -30,16 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idVueloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.origenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.destinoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechasalidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechallegadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horasalidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horallegadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plazasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precioplazaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vueloBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.negoServiciosGenNHibernateDataSet = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSet();
             this.vueloTableAdapter = new NegoServiciosGenNHibernate.NegoServiciosGenNHibernateDataSetTableAdapters.VueloTableAdapter();
@@ -50,6 +40,16 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.idVueloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.origenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.destinoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechasalidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechallegadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horasalidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horallegadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plazasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioplazaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vueloBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.negoServiciosGenNHibernateDataSet)).BeginInit();
@@ -76,67 +76,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(743, 282);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // idVueloDataGridViewTextBoxColumn
-            // 
-            this.idVueloDataGridViewTextBoxColumn.DataPropertyName = "idVuelo";
-            this.idVueloDataGridViewTextBoxColumn.HeaderText = "idVuelo";
-            this.idVueloDataGridViewTextBoxColumn.Name = "idVueloDataGridViewTextBoxColumn";
-            this.idVueloDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // origenDataGridViewTextBoxColumn
-            // 
-            this.origenDataGridViewTextBoxColumn.DataPropertyName = "origen";
-            this.origenDataGridViewTextBoxColumn.HeaderText = "origen";
-            this.origenDataGridViewTextBoxColumn.Name = "origenDataGridViewTextBoxColumn";
-            // 
-            // destinoDataGridViewTextBoxColumn
-            // 
-            this.destinoDataGridViewTextBoxColumn.DataPropertyName = "destino";
-            this.destinoDataGridViewTextBoxColumn.HeaderText = "destino";
-            this.destinoDataGridViewTextBoxColumn.Name = "destinoDataGridViewTextBoxColumn";
-            // 
-            // fechasalidaDataGridViewTextBoxColumn
-            // 
-            this.fechasalidaDataGridViewTextBoxColumn.DataPropertyName = "fecha_salida";
-            this.fechasalidaDataGridViewTextBoxColumn.HeaderText = "fecha_salida";
-            this.fechasalidaDataGridViewTextBoxColumn.Name = "fechasalidaDataGridViewTextBoxColumn";
-            // 
-            // fechallegadaDataGridViewTextBoxColumn
-            // 
-            this.fechallegadaDataGridViewTextBoxColumn.DataPropertyName = "fecha_llegada";
-            this.fechallegadaDataGridViewTextBoxColumn.HeaderText = "fecha_llegada";
-            this.fechallegadaDataGridViewTextBoxColumn.Name = "fechallegadaDataGridViewTextBoxColumn";
-            // 
-            // horasalidaDataGridViewTextBoxColumn
-            // 
-            this.horasalidaDataGridViewTextBoxColumn.DataPropertyName = "hora_salida";
-            this.horasalidaDataGridViewTextBoxColumn.HeaderText = "hora_salida";
-            this.horasalidaDataGridViewTextBoxColumn.Name = "horasalidaDataGridViewTextBoxColumn";
-            // 
-            // horallegadaDataGridViewTextBoxColumn
-            // 
-            this.horallegadaDataGridViewTextBoxColumn.DataPropertyName = "hora_llegada";
-            this.horallegadaDataGridViewTextBoxColumn.HeaderText = "hora_llegada";
-            this.horallegadaDataGridViewTextBoxColumn.Name = "horallegadaDataGridViewTextBoxColumn";
-            // 
-            // plazasDataGridViewTextBoxColumn
-            // 
-            this.plazasDataGridViewTextBoxColumn.DataPropertyName = "plazas";
-            this.plazasDataGridViewTextBoxColumn.HeaderText = "plazas";
-            this.plazasDataGridViewTextBoxColumn.Name = "plazasDataGridViewTextBoxColumn";
-            // 
-            // precioplazaDataGridViewTextBoxColumn
-            // 
-            this.precioplazaDataGridViewTextBoxColumn.DataPropertyName = "precio_plaza";
-            this.precioplazaDataGridViewTextBoxColumn.HeaderText = "precio_plaza";
-            this.precioplazaDataGridViewTextBoxColumn.Name = "precioplazaDataGridViewTextBoxColumn";
-            // 
-            // fKidAerolineaidAerolineaDataGridViewTextBoxColumn
-            // 
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.DataPropertyName = "FK_idAerolinea_idAerolinea";
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.HeaderText = "FK_idAerolinea_idAerolinea";
-            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.Name = "fKidAerolineaidAerolineaDataGridViewTextBoxColumn";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // vueloBindingSource
             // 
@@ -230,6 +170,67 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // idVueloDataGridViewTextBoxColumn
+            // 
+            this.idVueloDataGridViewTextBoxColumn.DataPropertyName = "idVuelo";
+            this.idVueloDataGridViewTextBoxColumn.HeaderText = "idVuelo";
+            this.idVueloDataGridViewTextBoxColumn.Name = "idVueloDataGridViewTextBoxColumn";
+            this.idVueloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // origenDataGridViewTextBoxColumn
+            // 
+            this.origenDataGridViewTextBoxColumn.DataPropertyName = "origen";
+            this.origenDataGridViewTextBoxColumn.HeaderText = "origen";
+            this.origenDataGridViewTextBoxColumn.Name = "origenDataGridViewTextBoxColumn";
+            // 
+            // destinoDataGridViewTextBoxColumn
+            // 
+            this.destinoDataGridViewTextBoxColumn.DataPropertyName = "destino";
+            this.destinoDataGridViewTextBoxColumn.HeaderText = "destino";
+            this.destinoDataGridViewTextBoxColumn.Name = "destinoDataGridViewTextBoxColumn";
+            // 
+            // fechasalidaDataGridViewTextBoxColumn
+            // 
+            this.fechasalidaDataGridViewTextBoxColumn.DataPropertyName = "fecha_salida";
+            this.fechasalidaDataGridViewTextBoxColumn.HeaderText = "fecha_salida";
+            this.fechasalidaDataGridViewTextBoxColumn.Name = "fechasalidaDataGridViewTextBoxColumn";
+            // 
+            // fechallegadaDataGridViewTextBoxColumn
+            // 
+            this.fechallegadaDataGridViewTextBoxColumn.DataPropertyName = "fecha_llegada";
+            this.fechallegadaDataGridViewTextBoxColumn.HeaderText = "fecha_llegada";
+            this.fechallegadaDataGridViewTextBoxColumn.Name = "fechallegadaDataGridViewTextBoxColumn";
+            // 
+            // horasalidaDataGridViewTextBoxColumn
+            // 
+            this.horasalidaDataGridViewTextBoxColumn.DataPropertyName = "hora_salida";
+            this.horasalidaDataGridViewTextBoxColumn.HeaderText = "hora_salida";
+            this.horasalidaDataGridViewTextBoxColumn.Name = "horasalidaDataGridViewTextBoxColumn";
+            // 
+            // horallegadaDataGridViewTextBoxColumn
+            // 
+            this.horallegadaDataGridViewTextBoxColumn.DataPropertyName = "hora_llegada";
+            this.horallegadaDataGridViewTextBoxColumn.HeaderText = "hora_llegada";
+            this.horallegadaDataGridViewTextBoxColumn.Name = "horallegadaDataGridViewTextBoxColumn";
+            // 
+            // plazasDataGridViewTextBoxColumn
+            // 
+            this.plazasDataGridViewTextBoxColumn.DataPropertyName = "plazas";
+            this.plazasDataGridViewTextBoxColumn.HeaderText = "plazas";
+            this.plazasDataGridViewTextBoxColumn.Name = "plazasDataGridViewTextBoxColumn";
+            // 
+            // precioplazaDataGridViewTextBoxColumn
+            // 
+            this.precioplazaDataGridViewTextBoxColumn.DataPropertyName = "precio_plaza";
+            this.precioplazaDataGridViewTextBoxColumn.HeaderText = "precio_plaza";
+            this.precioplazaDataGridViewTextBoxColumn.Name = "precioplazaDataGridViewTextBoxColumn";
+            // 
+            // fKidAerolineaidAerolineaDataGridViewTextBoxColumn
+            // 
+            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.DataPropertyName = "idAerolinea";
+            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.HeaderText = "idAerolinea";
+            this.fKidAerolineaidAerolineaDataGridViewTextBoxColumn.Name = "fKidAerolineaidAerolineaDataGridViewTextBoxColumn";
+            // 
             // VuelosVer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,6 +264,13 @@
         private NegoServiciosGenNHibernateDataSet negoServiciosGenNHibernateDataSet;
         private System.Windows.Forms.BindingSource vueloBindingSource;
         private NegoServiciosGenNHibernateDataSetTableAdapters.VueloTableAdapter vueloTableAdapter;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridViewTextBoxColumn idVueloDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn origenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn destinoDataGridViewTextBoxColumn;
@@ -273,12 +281,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn plazasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioplazaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fKidAerolineaidAerolineaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
     }
 }

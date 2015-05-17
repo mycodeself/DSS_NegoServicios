@@ -17,12 +17,14 @@ namespace NegoServiciosGenNHibernate.UI
     {
         VuelosVer form;
         VueloEN vuelo;
-        public VuelosModificar(VuelosVer f,int id_vuelo)
+        public VuelosModificar(VuelosVer f,int id_vuelo,int id_aerolinea)
         {
             InitializeComponent();
             form = f;
             VueloCAD cad = new VueloCAD();
+            AerolineaCAD cad_aerolinea = new AerolineaCAD();
             vuelo = cad.ReadOID(id_vuelo);
+            vuelo.Aerolinea = cad_aerolinea.ReadOID(id_aerolinea);
             origen_textbox.Text = vuelo.Origen;
             destino_textbox.Text = vuelo.Destino;
             salida_textbox.Value = vuelo.Fecha_salida.Value;
